@@ -21,6 +21,16 @@
         </div>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div>
+            Próximos Servicios de la Nueva Actualización
+            <div>
+                <h1>Nueva Conversión de Cripto</h1>
+                <p>Esta nueva opción te dara una gran ventaja al poder hacer consultas de el valor de la Cripto Moneda que desees a la tasa de valor de tu moneda local.</p>
+                <h1>Nuevo Modo de Transferencia</h1>
+                <p>Gracias a la nueva red que nos ofrece la actualidad, la velocidad de transferencia tanto de modo local como la intercional será en tiempos casi instantanea sin tener que 
+                    esperar 
+                </p>
+            </div>
+        </div>
     </body>
 </html>
