@@ -9,7 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Secure Bank</title>
+        <div>
+            <h3>Prestámos</h3>
+            <h3>Formas de Pago</h3>
+            <h3>Monedas</h3>
+            <select name="user" id="user">
+                <option>Facturas</option>
+                <option>Estado de Cuenta</option>
+            </select>
+        </div>
     </head>
     <body>
         <h1>Hello World!</h1>
