@@ -1,19 +1,30 @@
 
 package modelo;
 
+import config.Conexion;
 import interfaces.CRUD;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
 import java.util.List;
 
 public class pagoservicioDAO implements CRUD{
-    
-   public pagoservicioDAO(){
-       pagoservicio  pagoservicio = new pagoservicio();
-       
-   }
-
+   Conexion conect = new Conexion();
+   Connection con;
+   PreparedStatement ps;
+   ResultSet rs;
+   pagoservicio pservicio = new pagoservicio();
     @Override
     public List listar() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        ArrayList<pagoservicio> listaServicio = new ArrayList();
+        String sql = "select * from PagoServicio";
+        try{
+            con = conect.getConnection();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return listaServicio;
     }
 
     @Override
