@@ -25,7 +25,13 @@ public class pagoservicioDAO implements CRUD{
             rs = ps.executeQuery();
             while(rs.next()){
                 pagoservicio nuevopagoservicio = new pagoservicio();
-                
+                nuevopagoservicio.setIdentificadorPago(rs.getInt("identificadorPago"));
+                nuevopagoservicio.setIdCliente(rs.getInt("idCliente"));
+                nuevopagoservicio.setNitProveedor(rs.getString("nitProveedor"));
+                nuevopagoservicio.setMonto(rs.getString("Monto"));
+                nuevopagoservicio.setIdMoneda(rs.getInt("idMoneda"));
+                nuevopagoservicio.setFechaYHora(rs.getDate("fechaYHora"));
+                listaServicio.add(nuevopagoservicio);
             }
         }catch(Exception e){
             e.printStackTrace();
