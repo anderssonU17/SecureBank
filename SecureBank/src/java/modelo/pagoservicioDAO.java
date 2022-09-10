@@ -20,7 +20,13 @@ public class pagoservicioDAO implements CRUD{
         ArrayList<pagoservicio> listaServicio = new ArrayList();
         String sql = "select * from PagoServicio";
         try{
-            con = conect.getConnection();
+            con = conect.Conexion();
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                pagoservicio nuevopagoservicio = new pagoservicio();
+                
+            }
         }catch(Exception e){
             e.printStackTrace();
         }
