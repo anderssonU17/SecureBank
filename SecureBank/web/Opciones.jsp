@@ -9,9 +9,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Opciones</title>
+        <link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <title>SecureBank</title>
     </head>
     <body>
-        <h1>Menú Opciones</h1>
+        <div class="container">
+            <h1 class="text-center text-primary">Menú Opciones</h1><br>
+            <center>
+            <img src="img/logo.png" alt="150" width="260"><br>
+            <label>Seguridad en financiamientos</label>
+             <h2 class="text-center text-primary">Seleccione una Opción</h2>
+            </center>
+        </div>
     </body>
 </html>
