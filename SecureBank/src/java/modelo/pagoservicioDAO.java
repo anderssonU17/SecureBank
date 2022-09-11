@@ -41,7 +41,13 @@ public class pagoservicioDAO implements CRUD{
 
     @Override
     public pagoservicio list(int id0) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        
+        try{
+            
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        
     }
 
     @Override
