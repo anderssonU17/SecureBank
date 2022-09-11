@@ -10,17 +10,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />
         <title>Login</title>
     </head>
-    <body>
+    <body class="bg-dark">
         <div class="container mt-4 col-lg-4">
             <div class="card dol-sm-10">
                 <div class="card-body">
                     <form class="form-sign" action="Validar" method="POST">
-                        <div class="form-group text-center">
+                        <div class="form-group text-center px-lag-5 pt-lag-4 pb-lag-3 p-4">
                     <h3>Login</h3>
-                    <img src="img/Logo.png" alt="650" width="200"/><br>
-                    <label>
+                    <img src="img/logoremove.png" alt="650" width="200"/><br>
+                    <label> 
                         Bienvenidos al programa!
                     </label>
                     </div>
