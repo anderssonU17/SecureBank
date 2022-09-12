@@ -10,35 +10,43 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" href="/SecureBank/css/style.css" />
         <title>Login</title>
     </head>
-    <body class="bg-dark">
-        <div class="container mt-4 col-lg-4">
-            <div class="card dol-sm-10">
-                <div class="card-body">
-                    <form class="form-sign" action="Validar" method="POST">
-                        <div class="form-group text-center px-lag-5 pt-lag-4 pb-lag-3 p-4">
-                    <h3>Login</h3>
-                    <img src="img/logoremove.png" alt="650" width="200"/><br>
-                    <label> 
-                        Bienvenidos al programa!
-                    </label>
-                    </div>
-                        <div class="form-group">
-                            <label>Usuario</label>
-                            <input type="text" name="txtUser" class="form-control">
+    <body>
+        <div class="row"> 
+            <div class="mt-4 col-lg-8">
+                <img src="/SecureBank/img/fondo2.png" class="banner">
+            </div>
+           
+            <div class="mt-4 col-lg-4">
+                <div class="d0 card col-sm-10">
+                    <div class="d1 card-body">
+                        <form class="form-sign" action="Validar" method="POST">
+                            <div class="form-group text-center px-lag-5 pt-lag-4 pb-lag-3 p-4">
+                                <h3 class="login-form">Login</h3>
+                                <img src="img/logoremove.png" alt="650" width="200"/><br>
+                                <label> 
+                                    Registrate en el programa<br>
+                                    ¿Qué esperas?
+                                </label>
+                                <img src="img/Bank.png" alt="100" width="50"/><br>
                             </div>
-                        <div class="form-group">
-                            <label>Contraseña</label>
-                            <input type="password" name="txtPass" class="form-control">
-                        </div>
-                        <input type="submit" name="accion" value="Ingresar" class="btn btn-primary btn-block">
-                    </form>
+                            <div class="d5 form-group text-center">
+                                <label>Usuario</label>
+                                <input type="text" name="txtUser" class="form-control">
+                            </div>
+                            <div class="d6 form-group text-center">
+                                <label>Contraseña</label>
+                                <input type="password" name="txtPass" class="form-control">
+                            </div>
+                            <input type="submit" name="accion" value="Ingresar" class="btn btn-primary btn-block">
+                        </form>
                     </div>
                 </div>
             </div>
-        
+        </div>
         
         
         

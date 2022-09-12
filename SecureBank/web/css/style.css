@@ -1,11 +1,39 @@
-:root{
-    -dark: #16191c;
-    -dark-x: #1e2126;
-    -light: ffffff;
-}
+
 
 body{
+       background-color: #7491ff;
+       font-family: "Trirong", serif;
     
+       background-size: cover;
+       background-position: center;
 }
 
-.bg-dark{ backgroun-color: #080808;}
+.bg-dark{ 
+   
+}
+
+.banner{
+    width: 100%;
+    padding-top: 135px;
+}
+
+
+.d0{
+    border-radius: 15px;
+    background-color: #000000;
+}
+
+.d1{
+    background-color: #77a3ff;
+    border-radius: 60px;
+}
+
+.d5{
+    background-color: #20dac4;
+    border-radius: 15px;
+}
+
+.d6{
+    background-color: #20dac4;
+    border-radius: 15px;
+}
