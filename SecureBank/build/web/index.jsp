@@ -51,7 +51,7 @@
                             <input type="submit" name="accion" value="Ingresar" class="btn btn-outline-primary btn-block">
                         </div>
                         
-                        <%-- Login con redes sociales --%>
+                        <%-- Login con redes sociales --%>  
                         
                     </form>
                 </div>
