@@ -40,7 +40,7 @@
                         </div>
                         <div class="mb-4 text-center">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" name="txtUser">
+                            <input type="password" class="form-control" name="txtPass">
                         </div>
                         <div class="mb-4 form-check">
                             <input type="checkbox" name="connected" class="form-check-input">
