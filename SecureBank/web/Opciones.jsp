@@ -14,12 +14,10 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="text-center text-primary">Menú Opciones</h1><br>
-            <center>
-            <img src="img/logo.png" alt="150" width="260"><br>
-            <label>Seguridad en financiamientos</label>
-             <h2 class="text-center text-primary">Seleccione una Opción</h2>
-            </center>
+            <h1 class="text-center text-primary">Menú Opciones</h1><br><br><br>
+            <a href="">
+                <img src="img/Pagos Pendientes.png" width="400" height="250" onclick="Confirmar()">
+            </a>
         </div>
     </body>
 </html>
