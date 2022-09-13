@@ -8,10 +8,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <style>
+        .header {
+        text-aling:center;
+        height:300px;
+        padding: 12 px;
+        }
+        .avatar{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: url("");
+        }
+        .user-name{
+            font-size: 18px;
+            margin-top: 14px;
+        }
+    </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Cliente</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div class="header">
+            <img class="avatar" src=""/>
+        </div>
+        <h1>Cliente</h1>
     </body>
 </html>
