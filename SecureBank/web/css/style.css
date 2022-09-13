@@ -1,53 +1,43 @@
 .body{
-
+    margin: 0;
 }
 
-
-
-.bg{
-    background-image: url(../img/BancoRemove.png);
-    background-position: center center;
-    background-size: cover;
+.main-login{
+    width: 100vw;  /*ES LA LARGURA DE LA PAGINA*/
+    height: 100vh; /*ES LA ALTURA DE LA PAGINA*/
+    background: #228681;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
-
-
-/* (ANTERIOS LOGIN)
-body{
-       background-color: #7491ff;
-       font-family: "Trirong", serif;
-    
-       background-size: cover;
-       background-position: center;
+.left-login{
+    width: 50vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
 }
 
-.bg-dark{ 
-   
+.left-login > h1 {
+    color:    #10e8d7;
 }
 
-.banner{
-    width: 100%;
-    padding-top: 135px;
+.right-login{
+    width: 50vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
-
-.d0{
-    border-radius: 15px;
-    background-color: #000000;
+.card-login{
+    width: 60%; /*60% DE 50VH*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #228681;
 }
-
-.d1{
-    background-color: #77a3ff;
-    border-radius: 40px;
-}
-
-.d5{
-    background-color: #20dac4;
-    border-radius: 15px;
-}
-
-.d6{
-    background-color: #20dac4;
-    border-radius: 15px;
-}
-*/
