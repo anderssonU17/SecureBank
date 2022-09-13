@@ -1,5 +1,18 @@
+.body{
+
+}
 
 
+
+.bg{
+    background-image: url(../img/BancoRemove.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+/* (ANTERIOS LOGIN)
 body{
        background-color: #7491ff;
        font-family: "Trirong", serif;
@@ -25,7 +38,7 @@ body{
 
 .d1{
     background-color: #77a3ff;
-    border-radius: 60px;
+    border-radius: 40px;
 }
 
 .d5{
@@ -37,3 +50,4 @@ body{
     background-color: #20dac4;
     border-radius: 15px;
 }
+*/
