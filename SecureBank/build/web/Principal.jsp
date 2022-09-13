@@ -14,11 +14,14 @@
             <h3>Prestámos</h3>
             <h3>Formas de Pago</h3>
             <h3>Monedas</h3>
-            <select name="user" id="user">
-                <option></option>
-                <option>Facturas</option>
-                <option>Estado de Cuenta</option>
-            </select>
+            <form>
+                <select>
+                    <option><%--Imagen--%></option>
+                    <option><%--Usuario--%></option>
+                    <option><%--Correo--%></option>
+                    <option>Log out</option>
+                </select>
+            </form>
         </div>
     </head>
     <body>
