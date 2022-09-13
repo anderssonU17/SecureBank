@@ -14,10 +14,29 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="text-center text-primary">Menú Opciones</h1><br><br><br>
-            <a href="">
-                <img src="img/Pagos Pendientes.png" width="400" height="250" onclick="Confirmar()">
-            </a>
+            <h1 class="text-center text-primary">Menú Opciones</h1><br><br>
+                <center>
+                    <nav>
+                        <ul>
+                            <p class="btn btn-pimary btn-block">Pagos Realizados</p>
+                                <a href="">
+                                    <img src="img/Pagos Realizados.jpg" width="400" height="250" onclick="Confirmar()"><br><br><br>
+                                </a>
+                        </ul>
+                        <ul>
+                            <p>Pagos Servicios</p>
+                                <a href="">
+                                    <img src="img/Pagos Servicios.jpg" width="400" height="250" onclick="Confirmar()"><br><br><br>
+                                </a>
+                        </ul>
+                        <ul>
+                            <p>Prestamos</p>
+                                <a href="">
+                                    <img src="img/Prestamos.jpg" width="400" height="250" onclick="Confirmar()">
+                                </a>
+                        </ul>
+                </center>
+            </nav>
         </div>
     </body>
 </html>
