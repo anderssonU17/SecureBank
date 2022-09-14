@@ -41,13 +41,23 @@ public class pagoservicioDAO implements CRUD{
 
     @Override
     public pagoservicio list(int id0) {
-        
+        String sql = "select * from PagoServicio where identificadorPago";
         try{
-            
+            con = conect.Conexion();
+            ps = con.prepareCall(sql);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                pservicio.setIdentificadorPago(rs.getInt("identificadorPago"));
+                pservicio.setIdCliente(rs.getInt("idCliente"));
+                pservicio.setNitProveedor(rs.getString("nitProveedor"));
+                pservicio.setMonto(rs.getString("Monto"));
+                pservicio.setIdMoneda(rs.getInt("idMoneda"));
+                pservicio.setFechaYHora(rs.getDate("fechaYHora"));
+            }
         }catch(Exception e){
             e.printStackTrace();
         }
-        
+        return pservicio;
     }
 
     @Override
