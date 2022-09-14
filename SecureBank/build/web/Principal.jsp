@@ -47,6 +47,7 @@
             <h1>Innovaciones para tu Bienestar</h1>
             <p>
                 Innovamos una banca electrónica con una amplia cantidad de funcionalidades para que fuera más cómodo. Ahorrándote tiempo para que evitaras largas filas dentro de un banco.
+                Nuevas formas de protección ante cualquier ataque o cambio de identidad que puedas sufrir ante cualquier percance.
             </p>
         </article>
         <footer>
