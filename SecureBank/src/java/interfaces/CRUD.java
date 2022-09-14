@@ -2,13 +2,13 @@
 package interfaces;
 
 import java.util.List;
-import modelo.pagoservicio;
+import modelo.pagoServicio;
 
 public interface CRUD {
     public List listar();
-    public pagoservicio list(int id0);
-    public boolean add(pagoservicio per);
-    public boolean edit(pagoservicio per0);
+    public pagoServicio list(int id0);
+    public boolean add(pagoServicio per);
+    public boolean edit(pagoServicio per0);
     public boolean eliminar(int id);
     
 }
