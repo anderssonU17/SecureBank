@@ -78,11 +78,6 @@ public class PagoServicioDAO implements CRUD{
     }
 
     @Override
-    public boolean edit(PagoServicio per0) {
-        throw new UnsupportedOperationException("Not supported yet."); 
-    }
-
-    @Override
     public boolean eliminar(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
