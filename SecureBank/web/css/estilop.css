@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    text-decoration: none; 
+    list-style: none; 
+    scroll-behavior: smooth; 
+}
+
+:root{
+    --text-color: #302e29;
+    --main-color: #ff9100;
+    --second-color: #858585;
+    --bg-color: #fffbf6;
+    --big-font: 4.5rem; 
+    --h2-font: 2.6rem; 
+    --p-font: 1.1rem;
+}
