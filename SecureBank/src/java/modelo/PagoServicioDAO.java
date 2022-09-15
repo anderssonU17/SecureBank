@@ -68,12 +68,12 @@ public class PagoServicioDAO implements CRUD{
             ps = con.prepareCall(sql);
             rs = ps.executeQuery();
             while(rs.next()){
-                PagoServicio pservicio = new PagoServicio();
-                
+               
             }
         }catch(Exception e){
             e.printStackTrace();
         }
+        System.out.println("No se pudo agregar");
         return false;
     }
 
