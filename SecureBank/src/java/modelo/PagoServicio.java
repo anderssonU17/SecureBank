@@ -8,13 +8,13 @@ public class PagoServicio {
     private int idCliente;
     private String nitProveedor;
     private String Monto;
-    private int idMoneda;
+    private String idMoneda;
     private Date fechaYHora;
 
     public PagoServicio() {
     }
 
-    public PagoServicio(int identificadorPago, int idCliente, String nitProveedor, String Monto, int idMoneda, Date fechaYHora) {
+    public PagoServicio(int identificadorPago, int idCliente, String nitProveedor, String Monto, String idMoneda, Date fechaYHora) {
         this.identificadorPago = identificadorPago;
         this.idCliente = idCliente;
         this.nitProveedor = nitProveedor;
@@ -55,11 +55,11 @@ public class PagoServicio {
         this.Monto = Monto;
     }
 
-    public int getIdMoneda() {
+    public String getIdMoneda() {
         return idMoneda;
     }
 
-    public void setIdMoneda(int idMoneda) {
+    public void setIdMoneda(String idMoneda) {
         this.idMoneda = idMoneda;
     }
 

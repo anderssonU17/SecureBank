@@ -7,6 +7,7 @@ package controlador;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -30,6 +31,25 @@ public class Controlador extends HttpServlet {
         
         if(menu.equals("Principal")){ //Cambiar de principal a otro que sea necesario
             request.getRequestDispatcher("Principal.jsp").forward(request, response);
+        }else if(menu.equals("PagoServicio")){
+            switch(accion){
+                case "Listar":
+                        List listarPagoServicio = pagoServicioDAO.listar();
+                        request.setAttribute("PagoServicio", listarPagoServicio);
+                    break;
+                
+                case "Agregar":
+                    String Proveedor = request.getParameter("txtProveedor");
+                    String Moneda = request.getParameter("txtMoneda");
+                    pagoServicio.setNitProveedor(Proveedor);
+                    pagoServicio.setIdMoneda(Moneda);
+                    pagoServicioDAO.add(pagoServicio);
+                    break;
+                    
+                case "Eliminar":
+                    
+                    break;
+            }
         }
     }
 
