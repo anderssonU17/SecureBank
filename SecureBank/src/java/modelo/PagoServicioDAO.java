@@ -62,7 +62,19 @@ public class PagoServicioDAO implements CRUD{
 
     @Override
     public boolean add(PagoServicio per) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        String sql = "insert into PagoServicio(Proveedor, Moneda) values(?, ?)";
+        try{
+            con = conect.Conexion();
+            ps = con.prepareCall(sql);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                PagoServicio pservicio = new PagoServicio();
+                
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override
