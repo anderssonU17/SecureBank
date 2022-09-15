@@ -52,5 +52,4 @@
             </div>
         </main>
     </body>
-    <script src="JavaScript/jsp.js"></script>
 </html>
