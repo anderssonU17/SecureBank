@@ -44,6 +44,7 @@ public class Controlador extends HttpServlet {
                     pagoServicio.setNitProveedor(Proveedor);
                     pagoServicio.setIdMoneda(Moneda);
                     pagoServicioDAO.add(pagoServicio);
+                    request.getRequestDispatcher("Controlador?menu=PagoServicio&accion=Listar").forward(request, response);
                     break;
                     
                 case "Eliminar":

@@ -29,7 +29,7 @@ public class PagoServicioDAO implements CRUD{
                 nuevopagoservicio.setIdCliente(rs.getInt("idCliente"));
                 nuevopagoservicio.setNitProveedor(rs.getString("nitProveedor"));
                 nuevopagoservicio.setMonto(rs.getString("Monto"));
-                nuevopagoservicio.setIdMoneda(rs.getInt("idMoneda"));
+                nuevopagoservicio.setIdMoneda(rs.getString("idMoneda"));
                 nuevopagoservicio.setFechaYHora(rs.getDate("fechaYHora"));
                 listaServicio.add(nuevopagoservicio);
             }
@@ -51,7 +51,7 @@ public class PagoServicioDAO implements CRUD{
                 pservicio.setIdCliente(rs.getInt("idCliente"));
                 pservicio.setNitProveedor(rs.getString("nitProveedor"));
                 pservicio.setMonto(rs.getString("Monto"));
-                pservicio.setIdMoneda(rs.getInt("idMoneda"));
+                pservicio.setIdMoneda(rs.getString("idMoneda"));
                 pservicio.setFechaYHora(rs.getDate("fechaYHora"));
             }
         }catch(Exception e){
