@@ -9,22 +9,22 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class pagoServicioDAO implements CRUD{
+public class PagoServicioDAO implements CRUD{
    Conexion conect = new Conexion();
    Connection con;
    PreparedStatement ps;
    ResultSet rs;
-   pagoServicio pservicio = new pagoServicio();
+   PagoServicio pservicio = new PagoServicio();
     @Override
     public List listar() {
-        ArrayList<pagoServicio> listaServicio = new ArrayList();
+        ArrayList<PagoServicio> listaServicio = new ArrayList();
         String sql = "select * from PagoServicio";
         try{
             con = conect.Conexion();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while(rs.next()){
-                pagoServicio nuevopagoservicio = new pagoServicio();
+                PagoServicio nuevopagoservicio = new PagoServicio();
                 nuevopagoservicio.setIdentificadorPago(rs.getInt("identificadorPago"));
                 nuevopagoservicio.setIdCliente(rs.getInt("idCliente"));
                 nuevopagoservicio.setNitProveedor(rs.getString("nitProveedor"));
@@ -40,7 +40,7 @@ public class pagoServicioDAO implements CRUD{
     }
 
     @Override
-    public pagoServicio list(int id0) {
+    public PagoServicio list(int id0) {
         String sql = "select * from PagoServicio where identificadorPago";
         try{
             con = conect.Conexion();
@@ -61,12 +61,12 @@ public class pagoServicioDAO implements CRUD{
     }
 
     @Override
-    public boolean add(pagoServicio per) {
+    public boolean add(PagoServicio per) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
-    public boolean edit(pagoServicio per0) {
+    public boolean edit(PagoServicio per0) {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
 

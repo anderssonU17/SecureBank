@@ -3,7 +3,7 @@ package modelo;
 
 import java.sql.Date;
 
-public class pagoServicio {
+public class PagoServicio {
     private int identificadorPago;
     private int idCliente;
     private String nitProveedor;
@@ -11,10 +11,10 @@ public class pagoServicio {
     private int idMoneda;
     private Date fechaYHora;
 
-    public pagoServicio() {
+    public PagoServicio() {
     }
 
-    public pagoServicio(int identificadorPago, int idCliente, String nitProveedor, String Monto, int idMoneda, Date fechaYHora) {
+    public PagoServicio(int identificadorPago, int idCliente, String nitProveedor, String Monto, int idMoneda, Date fechaYHora) {
         this.identificadorPago = identificadorPago;
         this.idCliente = idCliente;
         this.nitProveedor = nitProveedor;
