@@ -74,11 +74,20 @@ public class PagoServicioDAO implements CRUD{
             e.printStackTrace();
         }
         System.out.println("No se pudo agregar");
-        return false;
+        return false; //Cambiar
     }
 
     @Override
     public boolean eliminar(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+        String sql = "delete from PagoServicio where identificadorPago = " + id;
+        try{
+            con = conect.Conexion();
+            ps = con.prepareStatement(sql);
+            ps.executeQuery();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        System.out.println("No se pudo eliminar");
+        return false; //Cambiar
+    }   
 }
