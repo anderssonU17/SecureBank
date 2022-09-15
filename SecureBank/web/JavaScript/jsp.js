@@ -1,0 +1,1 @@
+alert("¡Bienvenido al área de Opciones!");  

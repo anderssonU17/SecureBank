@@ -1,4 +1,4 @@
-<%-- 
+    <%-- 
     Document   : Opciones
     Created on : 9/09/2022, 04:55:14 PM
     Author     : vict0
@@ -9,34 +9,35 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
+         <link rel="stylesheet" href="css/Estilos.css">
         <title>SecureBank</title>
     </head>
+
     <body>
-        <div class="container">
-            <h1 class="text-center text-primary">Menú Opciones</h1><br><br>
-                <center>
-                    <nav>
-                        <ul>
-                            <p class="btn btn-pimary btn-block">Pagos Realizados</p>
-                                <a href="">
-                                    <img src="img/Pagos Realizados.jpg" width="400" height="250" onclick="Confirmar()"><br><br><br>
-                                </a>
-                        </ul>
-                        <ul>
-                            <p>Pagos Servicios</p>
-                                <a href="">
-                                    <img src="img/Pagos Servicios.jpg" width="400" height="250" onclick="Confirmar()"><br><br><br>
-                                </a>
-                        </ul>
-                        <ul>
-                            <p>Prestamos</p>
-                                <a href="">
-                                    <img src="img/Prestamos.jpg" width="400" height="250" onclick="Confirmar()">
-                                </a>
-                        </ul>
-                </center>
-            </nav>
-        </div>
+        <main>
+            <h1>Eliga una Opción</h1>
+            
+            <div class="container_box">
+                <div class="box">
+                    <h5>Tigo</h5>
+                </div>
+                 <div class="box">
+                    <h5>Claro</h5>
+                </div>
+                 <div class="box">
+                    <h5>Elektra</h5>
+                </div>
+                 <div class="box">
+                    <h5>Telgua</h5>
+                </div>
+                 <div class="box">
+                    <h5>La Curacao</h5>
+                </div>
+                 <div class="box">
+                    <h5>Otros Pagos</h5>
+                </div>
+            </div>
+        </main>
     </body>
+    <script src="JavaScript/jsp.js"></script>
 </html>
