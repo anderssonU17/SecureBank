@@ -20,21 +20,18 @@
     </head>
     <body>
         <header>
-            <a href="#" class="logo">Secure<span>Bank</span></a>
-            
-            <ul>
-                <li><a href="#">Principal</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact</a></li>
+            <a href="#" class="logo" style="font-family: Raleway, sans-serif">Secure<span>Bank</span></a>
+        
+            <ul class="navbar">
+                <li style="font-family: Raleway, sans-serif"><a href="#">Principal</a></li>
+                <li style="font-family: Raleway, sans-serif"><a href="#">About</a></li>
+                <li style="font-family: Raleway, sans-serif"><a href="#">Menu</a></li>
+                <li style="font-family: Raleway, sans-serif"><a href="#">Contact</a></li>
             </ul>
-            
+        
             <div class="h-icons">
                 <a href="#"><i class='bx bx-log-in'></i></a>
                 <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
-            <div>
-                
             </div>
         </header>
         
