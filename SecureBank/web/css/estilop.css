@@ -21,6 +21,7 @@ body{
 	background: var(--bg-color);
 	color: var(--text-color);
 }
+
 header{
 	position: fixed;
 	width: 100%;
@@ -34,17 +35,21 @@ header{
 	padding: 23px 15%;
 	transition: all .38s ease;
 }
+
 .logo{
 	font-size: 30px;
 	font-weight: 700;
 	color: var(--text-color);
 }
+
 span{
 	color: var(--main-color);
 }
+
 .navbar{
 	display: flex;
 }
+
 .navbar a{
 	color: var(--text-color);
 	font-size: var(--p-font);
@@ -54,10 +59,12 @@ span{
 	border-bottom: 2px solid transparent;
 	transition: all .38s ease;
 }
+
 .navbar a:hover{
 	border-bottom: 2px solid var(--main-color);
 	color: var(--main-color);
 }
+
 .h-icons{
 	display: flex;
 	align-items: center;
@@ -65,12 +72,14 @@ span{
 	background: var(--main-color);
 	border-radius: 5rem;
 }
+
 .h-icons i{
 	font-size: 22px;
 	color: var(--bg-color);
 	margin-right: 15px;
 	margin-left: 8px;
 }
+
 
 #menu-icon {
     font-size: 32px; 
@@ -80,11 +89,32 @@ span{
     display: none;
 }
 
+
 section{
     padding: 90px 15% 80px; 
 }
 
+
 .home{
     height: 88vh; 
     width: 100%;
+    position: relative; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center; 
+    gap: 2rem; 
+    
+}
+
+.home-img img{
+    width: 100%; 
+    height: auto; 
+    
+}
+
+.home-text h1{
+    font-size: var(--big-font);
+    line-height: 1.2;
+    margin-bottom: 2rem; 
+    
 }

@@ -44,11 +44,14 @@ public final class Principal_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("<style type=\"text/css\">\n");
+      out.write("@import \"css/estilop.css\";\n");
+      out.write("</style>\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <link rel=\"stylesheet\" href=\"css/estilop.css\"> \n");
       out.write("        \n");
       out.write("        <link rel=\"stylesheet\" href=\"https://unpkg.com/boxicons@latest/css/boxicons.min.css\">\n");
       out.write("        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n");
@@ -76,9 +79,9 @@ public final class Principal_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        \n");
       out.write("        <section class=\"home\" id=\"home\">\n");
       out.write("            <div class=\"home-text\">\n");
-      out.write("                <h1 style=\"font-family: Raleway, sans-serif\"><span>Bienvenidos</span> a SecureBank seguridad financiera!</h1>\n");
-      out.write("                <p style=\"font-family: Raleway, sans-serif\">Tendras una gran comodidad al recibir nuestros servicios y darte una salud financiera para ti!</p>\n");
-      out.write("                <a href=\"#\" class=\"btn\" style=\"font-family: Raleway, sans-serif\">Inicia Sesion</a>\n");
+      out.write("                <h1><span>Bienvenidos</span> a SecureBank seguridad financiera!</h1>\n");
+      out.write("                <p>Tendras una gran comodidad al recibir nuestros servicios y darte una salud financiera para ti!</p>\n");
+      out.write("                <a href=\"#\" class=\"btn\">Inicia Sesion</a>\n");
       out.write("            </div>\n");
       out.write("            \n");
       out.write("            <div class=\"home-img\">\n");
