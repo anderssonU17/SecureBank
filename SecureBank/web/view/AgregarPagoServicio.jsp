@@ -9,9 +9,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Agregar PagoServicio</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div>
+            <h1>Agregar Nuevo Proveedor</h1>
+            <form action="Controlador">
+                <strong>Proveedor: </strong><br><br>
+                <input class="form-control" type="text" name="txtProveedor"><br><br>
+                <strong>Moneda</strong><br><br>
+                <input class="form-control" type="text" name="txtMoneda"><br><br>
+                <input class="btn btn-primary" type="submit" name="accion" value="Agregar"><br><br>
+            </form>
+        </div>
     </body>
 </html>
