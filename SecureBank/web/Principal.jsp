@@ -35,6 +35,19 @@
             </div>
         </header>
         
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1 style="font-family: Raleway, sans-serif"><span>Bienvenidos</span> a SecureBank seguridad financiera!</h1>
+                <p style="font-family: Raleway, sans-serif">Tendras una gran comodidad al recibir nuestros servicios y darte una salud financiera para ti!</p>
+                <a href="#" class="btn" style="font-family: Raleway, sans-serif">Inicia Sesion</a>
+            </div>
+            
+            <div class="home-img">
+                <img src="img/finance.svg">
+            </div>
+        </section>
+        
+        
         <script type="text/javascript" src="js/script.js"></script>
         
     </body>

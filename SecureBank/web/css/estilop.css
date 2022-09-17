@@ -80,5 +80,11 @@ span{
     display: none;
 }
 
+section{
+    padding: 90px 15% 80px; 
+}
 
-
+.home{
+    height: 88vh; 
+    width: 100%;
+}
