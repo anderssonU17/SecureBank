@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     text-decoration: none; 
     list-style: none; 
     scroll-behavior: smooth; 
@@ -71,5 +71,14 @@ span{
 	margin-right: 15px;
 	margin-left: 8px;
 }
+
+#menu-icon {
+    font-size: 32px; 
+    color: var(--bg-color);
+    z-index: 10001; 
+    cursor: pointer;
+    display: none;
+}
+
 
 
