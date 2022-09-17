@@ -68,7 +68,9 @@ public class PagoServicioDAO implements CRUD{
             ps = con.prepareCall(sql);
             rs = ps.executeQuery();
             while(rs.next()){
-               
+                ps.setString(1, per.getNitProveedor());
+                ps.setString(2, per.getIdMoneda());
+                ps.executeUpdate();
             }
         }catch(Exception e){
             e.printStackTrace();
@@ -83,7 +85,7 @@ public class PagoServicioDAO implements CRUD{
         try{
             con = conect.Conexion();
             ps = con.prepareStatement(sql);
-            ps.executeQuery();
+            ps.executeUpdate();
         }catch(Exception e){
             e.printStackTrace();
         }

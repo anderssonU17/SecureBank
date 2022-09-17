@@ -23,6 +23,8 @@ public class Controlador extends HttpServlet {
     PagoServicio pagoServicio = new PagoServicio();
     PagoServicioDAO pagoServicioDAO = new PagoServicioDAO();
     
+    int codServicio;
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
@@ -34,10 +36,9 @@ public class Controlador extends HttpServlet {
         }else if(menu.equals("PagoServicio")){
             switch(accion){
                 case "Listar":
-                        List listarPagoServicio = pagoServicioDAO.listar();
-                        request.setAttribute("PagoServicio", listarPagoServicio);
+                    List listarPagoServicio = pagoServicioDAO.listar();
+                    request.setAttribute("PagoServicio", listarPagoServicio);
                     break;
-                
                 case "Agregar":
                     String Proveedor = request.getParameter("txtProveedor");
                     String Moneda = request.getParameter("txtMoneda");
@@ -46,9 +47,10 @@ public class Controlador extends HttpServlet {
                     pagoServicioDAO.add(pagoServicio);
                     request.getRequestDispatcher("Controlador?menu=PagoServicio&accion=Listar").forward(request, response);
                     break;
-                    
                 case "Eliminar":
-                    
+                    codServicio = Integer.parseInt(request.getParameter("identificadorPago"));
+                    pagoServicioDAO.eliminar(codServicio);
+                    request.getRequestDispatcher("Controlador?menu=PagoServicio&accion=Listar").forward(request, response);
                     break;
             }
         }
