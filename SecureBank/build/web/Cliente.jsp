@@ -236,20 +236,20 @@ body {
         <div class="perfil-usuario-body">
             <div class="perfil-usuario-bio">
                 <h3 class="titulo">Hector Juan Diego Navarro Medina</h3>
-                <p class="texto" class="center">Futuro Ingeniero en Sistemas, apasionado por el futbol.</p>
+                <p class="texto" class="center">Futuro Ingeniero en Sistemas y apasionado por el futbol del FCBarcelona :)</p>
             </div>
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
                     <li><i class="icono fas fa-map-signs"></i> Direccion de usuario:</li>
                     <li><i class="icono fas fa-phone-alt"></i> Telefono:</li>
-                    <li><i class="icono fas fa-briefcase"></i> Trabaja en.</li>
-                    <li><i class="icono fas fa-building"></i> Cargo</li>
+                    <li><i class="icono fas fa-briefcase"></i> Trabaja en:</li>
+                    <li><i class="icono fas fa-building"></i> Cargo:</li>
                 </ul>
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion.</li>
-                    <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
-                    <li><i class="icono fas fa-user-check"></i> Registro.</li>
-                    <li><i class="icono fas fa-share-alt"></i> Redes sociales.</li>
+                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion:</li>
+                    <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento:</li>
+                    <li><i class="icono fas fa-user-check"></i> Registro:</li>
+                    <li><i class="icono fas fa-share-alt"></i> Redes sociales:</li>
                 </ul>
             </div>
         </div>
