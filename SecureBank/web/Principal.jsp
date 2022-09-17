@@ -5,15 +5,12 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<style type="text/css">
-@import "css/estilop.css";
-</style>
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+        <link rel="stylesheet" href="css/estilop.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,9 +37,9 @@
         
         <section class="home" id="home">
             <div class="home-text">
-                <h1><span>Bienvenidos</span> a SecureBank seguridad financiera!</h1>
-                <p>Tendras una gran comodidad al recibir nuestros servicios y darte una salud financiera para ti!</p>
-                <a href="#" class="btn">Inicia Sesion</a>
+                <h1 style="font-family: Raleway, sans-serif"><span>Bienvenidos</span> a SecureBank seguridad financiera!</h1>
+                <p style="font-family: Raleway, sans-serif">Tendras una gran comodidad al recibir nuestros servicios <br>y darte una salud financiera para ti!</p>
+                <a href="#" class="btn" style="font-family: Raleway, sans-serif">Inicia Sesion</a>
             </div>
             
             <div class="home-img">
