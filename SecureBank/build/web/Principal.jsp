@@ -95,10 +95,24 @@
                     <div class="container-text">
                         <p>SecureBank Portales</p>
                     </div>
-                </div>
-            
+                </div>      
         </section>
         
+        
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/secure.svg">
+            </div>
+            
+            <div class="about-text">
+                <h2>Innovaciones para <br> Tu Bienestar</h2>
+                <p>Innovamos una banca electrónica con una amplia cantidad de funcionalidades para que fuera más cómodo.
+                <br><br>
+                Nuevas formas de protección ante cualquier ataque o cambio de identidad que puedas sufrir ante cualquier percance.
+                </p>
+                <a href="#" class="btn">Boton x</a>
+            </div>
+        </section>
         
         <script type="text/javascript" src="js/script.js"></script>
         
