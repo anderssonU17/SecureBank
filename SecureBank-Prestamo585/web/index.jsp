@@ -10,9 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Pagina Principal</title>
+        <link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>
+        <div class="text center">
+            <h2 class="text center"> ¿Deseas realizar un préstamos? </h2>
             <a href="Controlador?accion=listar">Listar Prestamo</a>
         </div>
     </body>

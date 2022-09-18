@@ -1,53 +1,142 @@
 .body{
-
+    margin: 0;
 }
 
-
-
-.bg{
-    background-image: url(../img/BancoRemove.png);
-    background-position: center center;
-    background-size: cover;
+body * {
+    box-sizing: border-box;
 }
 
+.main-login{
+    width: 100vw;  /*ES LA LARGURA DE LA PAGINA*/
+    height: 100vh; /*ES LA ALTURA DE LA PAGINA*/
+    background: #174E5A;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
 
+.left-login{
+    width: 50vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
 
-/* (ANTERIOS LOGIN)
-body{
-       background-color: #7491ff;
-       font-family: "Trirong", serif;
+.left-login > h1 {
+    font-size: 3vw;
+    color:    #10e8d7;
+}
+
+.left-login-image{
+    width: 35vw;
     
-       background-size: cover;
-       background-position: center;
 }
 
-.bg-dark{ 
-   
+.right-login{
+    width: 50vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
-.banner{
+
+.card-login{
+    width: 60%; /*60% DE 50VH*/
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #11687B;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #10e8d7 ;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
     width: 100%;
-    padding-top: 135px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px; 
 }
 
-
-.d0{
-    border-radius: 15px;
-    background-color: #000000;
+.textfield > input{
+    width: 100%; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 15px; 
+    background: #228681; 
+    color: #f0ffffde;
+    font-size: 12pt; 
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none; 
+    box-sizing: border-box; 
 }
 
-.d1{
-    background-color: #77a3ff;
-    border-radius: 40px;
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
 }
 
-.d5{
-    background-color: #20dac4;
-    border-radius: 15px;
+.textfield > input::placeholder{
+    color: #f0ffff94;
 }
 
-.d6{
-    background-color: #20dac4;
-    border-radius: 15px;
+.btn-login{
+    width: 100%; 
+    padding: 16px 0px; 
+    margin: 25px; 
+    border: none;
+    border-radius: 8px; 
+    outline: none; 
+    text-transform: uppercase; 
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #174E5A;
+    background: #1BB2D3;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #11B3B6;
 }
-*/
+
+.btn-login::mousehover{
+  background: #267789;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%; 
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    
+    .left-login > h1{
+        display: none; 
+    }
+    .rigth-login{
+        width: 100%; 
+        height: auto; 
+    }
+    
+    .left-login-image{
+        width: 50vw; 
+    }
+    
+    .card-login{
+        width: 90%; 
+        
+    }
+}
