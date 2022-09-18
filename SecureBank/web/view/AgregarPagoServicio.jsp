@@ -4,6 +4,12 @@
     Author     : humbe
 --%>
 
+<%@page import="java.util.ArrayList"%>
+<%@page import="modelo.Proveedor"%>
+<%@page import="modelo.PagoServicio"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.List"%>
+<%@page import="modelo.PagoServicioDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,13 +20,16 @@
     <body>
         <div>
             <h2>Agregar Nuevo Proveedor</h2>
-            <form action="Controlador">
-                <label for="areas" _msthash="61815" _msttexthash="250705">Proveedores: </label>
-                <select>
-                    <option value="0" _msthash="239915" _msttexthash="156741">selecciona</option>
-                    <option value="1" _msthash="240097" _msttexthash="131469"><% %></option>
+            <form class="form-horizontal" action="Controlador" method="post">
+                <label for="areas" _msthash="61815" _msttexthash="250705">Proveedores: </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <select class="form-control" id="cboProveedor" name="cboProveedor">
+                 <% List<Proveedor> listarPagoServicio = (List<Proveedor>)request.getAttribute("Proveedor");
+                    if(listarPagoServicio!=null)
+                    for(Proveedor Proveedor:listarPagoServicio) {%>
+                    <option value="<%=Proveedor.getNitProveedor()%>"><%= Proveedor.getNombreProveedor() %></option>
+                <%}%>  
                 </select><br><br>
-                <label for="areas" _msthash="61815" _msttexthash="250705">Monedas: </label>
+                <label for="areas" _msthash="61815" _msttexthash="250705">Monedas: </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 <select>
                     <option value="0" _msthash="239915" _msttexthash="156741">selecciona</option>
                     

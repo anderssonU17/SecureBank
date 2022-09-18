@@ -15,33 +15,30 @@ public class PagoServicioDAO implements CRUD{
    PreparedStatement ps;
    ResultSet rs;
    PagoServicio pservicio = new PagoServicio();
+   Proveedor pProveedor = new Proveedor();
     @Override
     public List listar() {
-        ArrayList<PagoServicio> listaServicio = new ArrayList();
-        String sql = "select * from PagoServicio";
+        ArrayList<Proveedor> listaProveedor = new ArrayList();
+        String sql = "select * from Proveedor";
         try{
             con = conect.Conexion();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while(rs.next()){
-                PagoServicio nuevopagoservicio = new PagoServicio();
-                nuevopagoservicio.setIdentificadorPago(rs.getInt("identificadorPago"));
-                nuevopagoservicio.setIdCliente(rs.getInt("idCliente"));
-                nuevopagoservicio.setNitProveedor(rs.getString("nitProveedor"));
-                nuevopagoservicio.setMonto(rs.getString("Monto"));
-                nuevopagoservicio.setIdMoneda(rs.getString("idMoneda"));
-                nuevopagoservicio.setFechaYHora(rs.getDate("fechaYHora"));
-                listaServicio.add(nuevopagoservicio);
+                Proveedor nuevoProveedor = new Proveedor();
+                nuevoProveedor.setNitProveedor(rs.getInt("nitProveedor"));
+                nuevoProveedor.setNombreProveedor(rs.getString("nombreProveedor"));
+                listaProveedor.add(nuevoProveedor);
             }
         }catch(Exception e){
             e.printStackTrace();
         }
-        return listaServicio;
+        return listaProveedor;
     }
 
     @Override
-    public PagoServicio list(int id0) {
-        String sql = "select * from PagoServicio where identificadorPago";
+    public PagoServicio list(int id) {
+        String sql = "select * from PagoServicio where identificadorPago" + id;
         try{
             con = conect.Conexion();
             ps = con.prepareCall(sql);

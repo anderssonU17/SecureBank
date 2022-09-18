@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.PagoServicio;
 import modelo.PagoServicioDAO;
+import modelo.Proveedor;
 
 /**
  *
@@ -28,6 +29,13 @@ public class Controlador extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+                PagoServicioDAO pServicioDAO = new PagoServicioDAO();
+        
+        List<Proveedor> listarPagoServicio = pServicioDAO.listar();
+        request.setAttribute("Proveedor", listarPagoServicio);
+        request.getRequestDispatcher("AgregarPagoServicio.jsp").forward(request, response);
+        
+        
         String menu = request.getParameter("menu");
         String accion = request.getParameter("accion");
         
@@ -36,8 +44,8 @@ public class Controlador extends HttpServlet {
         }else if(menu.equals("PagoServicio")){
             switch(accion){
                 case "Listar":
-                    List listarPagoServicio = pagoServicioDAO.listar();
-                    request.setAttribute("PagoServicio", listarPagoServicio);
+                    List listarPServicio = pagoServicioDAO.listar();
+                    request.setAttribute("PagoServicio", listarPServicio);
                     break;
                 case "Agregar":
                     String Proveedor = request.getParameter("txtProveedor");
