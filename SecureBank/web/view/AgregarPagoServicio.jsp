@@ -22,11 +22,11 @@
             <h2>Agregar Nuevo Proveedor</h2>
             <form class="form-horizontal" action="Controlador" method="post">
                 <label for="areas" _msthash="61815" _msttexthash="250705">Proveedores: </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <select class="form-control" id="cboProveedor" name="cboProveedor">
-                 <% List<Proveedor> listarPagoServicio = (List<Proveedor>)request.getAttribute("Proveedor");
+                <select class="form-control">
+                 <% List<Proveedor> listarPagoServicio = (List<Proveedor>)request.getAttribute("PagoServicio");
                     if(listarPagoServicio!=null)
-                    for(Proveedor Proveedor:listarPagoServicio) {%>
-                    <option value="<%=Proveedor.getNitProveedor()%>"><%= Proveedor.getNombreProveedor() %></option>
+                    for(Proveedor PagoServicio:listarPagoServicio) {%>
+                    <option value="<%=PagoServicio.getNitProveedor()%>"><%= PagoServicio.getNombreProveedor() %></option>
                 <%}%>  
                 </select><br><br>
                 <label for="areas" _msthash="61815" _msttexthash="250705">Monedas: </label> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp

@@ -32,7 +32,7 @@ public class Controlador extends HttpServlet {
                 PagoServicioDAO pServicioDAO = new PagoServicioDAO();
         
         List<Proveedor> listarPagoServicio = pServicioDAO.listar();
-        request.setAttribute("Proveedor", listarPagoServicio);
+        request.setAttribute("PagoServicio", listarPagoServicio);
         request.getRequestDispatcher("AgregarPagoServicio.jsp").forward(request, response);
         
         
