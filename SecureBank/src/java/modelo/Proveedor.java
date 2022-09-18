@@ -28,6 +28,11 @@ public class Proveedor {
     public void setNombreProveedor(String nombreProveedor) {
         this.nombreProveedor = nombreProveedor;
     }
+
+    @Override
+    public String toString() {
+        return getNombreProveedor();
+    }
     
     
 }

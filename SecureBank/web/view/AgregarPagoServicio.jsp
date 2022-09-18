@@ -13,12 +13,18 @@
     </head>
     <body>
         <div>
-            <h1>Agregar Nuevo Proveedor</h1>
+            <h2>Agregar Nuevo Proveedor</h2>
             <form action="Controlador">
-                <strong>Proveedor: </strong><br><br>
-                <input class="form-control" type="text" name="txtProveedor"><br><br>
-                <strong>Moneda</strong><br><br>
-                <input class="form-control" type="text" name="txtMoneda"><br><br>
+                <label for="areas" _msthash="61815" _msttexthash="250705">Proveedores: </label>
+                <select>
+                    <option value="0" _msthash="239915" _msttexthash="156741">selecciona</option>
+                    <option value="1" _msthash="240097" _msttexthash="131469"><% %></option>
+                </select><br><br>
+                <label for="areas" _msthash="61815" _msttexthash="250705">Monedas: </label>
+                <select>
+                    <option value="0" _msthash="239915" _msttexthash="156741">selecciona</option>
+                    
+                </select><br><br>
                 <input class="btn btn-primary" type="submit" name="accion" value="Agregar"><br><br>
             </form>
         </div>

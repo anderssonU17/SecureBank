@@ -28,6 +28,12 @@ public class Moneda {
     public void setNombreMoneda(String nombreMoneda) {
         this.nombreMoneda = nombreMoneda;
     }
+
+    @Override
+    public String toString() {
+        return getNombreMoneda();
+    }
+    
     
     
 }
