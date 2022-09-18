@@ -17,8 +17,8 @@ public class PagoServicioDAO implements CRUD{
    PagoServicio pservicio = new PagoServicio();
    Proveedor pProveedor = new Proveedor();
     @Override
-    public List listar() {
-        ArrayList<Proveedor> listaProveedor = new ArrayList();
+    public List listarProveedor() {
+        List<Proveedor> listaProveedor = new ArrayList();
         String sql = "select * from Proveedor";
         try{
             con = conect.Conexion();
@@ -34,6 +34,25 @@ public class PagoServicioDAO implements CRUD{
             e.printStackTrace();
         }
         return listaProveedor;
+    }
+    
+    public List listarMoneda(){
+        List<Moneda> listaMoneda = new ArrayList();
+        String sql = "select * from Moneda";
+        try{
+            con = conect.Conexion();
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                Moneda nuevoMoneda = new Moneda();
+                nuevoMoneda.setIdMoneda(rs.getInt("idMoneda"));
+                nuevoMoneda.setNombreMoneda(rs.getString("nombreDeMoneda"));
+                listaMoneda.add(nuevoMoneda);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return listaMoneda;
     }
 
     @Override

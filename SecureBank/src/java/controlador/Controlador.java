@@ -31,7 +31,7 @@ public class Controlador extends HttpServlet {
         
                 PagoServicioDAO pServicioDAO = new PagoServicioDAO();
         
-        List<Proveedor> listarPagoServicio = pServicioDAO.listar();
+        List<Proveedor> listarPagoServicio = pServicioDAO.listarProveedor();
         request.setAttribute("PagoServicio", listarPagoServicio);
         request.getRequestDispatcher("AgregarPagoServicio.jsp").forward(request, response);
         
@@ -44,7 +44,7 @@ public class Controlador extends HttpServlet {
         }else if(menu.equals("PagoServicio")){
             switch(accion){
                 case "Listar":
-                    List listarPServicio = pagoServicioDAO.listar();
+                    List listarPServicio = pagoServicioDAO.listarProveedor();
                     request.setAttribute("PagoServicio", listarPServicio);
                     break;
                 case "Agregar":
@@ -61,6 +61,8 @@ public class Controlador extends HttpServlet {
                     request.getRequestDispatcher("Controlador?menu=PagoServicio&accion=Listar").forward(request, response);
                     break;
             }
+        }else if(menu.equals("")){
+            
         }
     }
 

@@ -33,6 +33,6 @@ public class Proveedor {
     public String toString() {
         return getNombreProveedor();
     }
-    
+ 
     
 }
