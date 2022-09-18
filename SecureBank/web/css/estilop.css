@@ -136,5 +136,8 @@ section{
     font-weight: 600; 
     border-radius: 5rem; 
     transition: all .38s ease; 
-    
+}
+
+.btn:hover{
+    letter-spacing: 1px;
 }

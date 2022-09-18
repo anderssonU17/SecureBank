@@ -44,15 +44,12 @@ public final class Principal_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write("<style type=\"text/css\">\n");
-      out.write("@import \"css/estilop.css\";\n");
-      out.write("</style>\n");
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        \n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/estilop.css\">\n");
       out.write("        <link rel=\"stylesheet\" href=\"https://unpkg.com/boxicons@latest/css/boxicons.min.css\">\n");
       out.write("        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n");
       out.write("        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n");

@@ -6,6 +6,11 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
+<style>
+    body{
+        font-family: Raleway, sans-serif; 
+    }
+</style>
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,13 +25,13 @@
     </head>
     <body>
         <header>
-            <a href="#" class="logo" style="font-family: Raleway, sans-serif">Secure<span>Bank</span></a>
+            <a href="#" class="logo">Secure<span>Bank</span></a>
         
             <ul class="navbar">
-                <li style="font-family: Raleway, sans-serif"><a href="#">Principal</a></li>
-                <li style="font-family: Raleway, sans-serif"><a href="#">About</a></li>
-                <li style="font-family: Raleway, sans-serif"><a href="#">Menu</a></li>
-                <li style="font-family: Raleway, sans-serif"><a href="#">Contact</a></li>
+                <li><a href="#">Principal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         
             <div class="h-icons">
@@ -37,7 +42,7 @@
         
         <section class="home" id="home">
             <div class="home-text">
-                <h1 style="font-family: Raleway, sans-serif"><span>Bienvenidos</span> a SecureBank seguridad financiera!</h1>
+                <h1 style="font-family: Raleway, sans-serif"><span>Bienvenido</span> a su seguridad financiera!</h1>
                 <p style="font-family: Raleway, sans-serif">Tendras una gran comodidad al recibir nuestros servicios <br>y darte una salud financiera para ti!</p>
                 <a href="#" class="btn" style="font-family: Raleway, sans-serif">Inicia Sesion</a>
             </div>
@@ -45,6 +50,15 @@
             <div class="home-img">
                 <img src="img/finance.svg">
             </div>
+        </section>
+        
+        <%--CONTENIDO DE LA PAGINA--%>
+        <section class="container">
+            <div class="main-text">
+                <h2>Horarios</h2>
+                <p>7:00 am - 17:00 pm</p>
+            </div>
+            
         </section>
         
         
