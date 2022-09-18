@@ -5,8 +5,8 @@ package modelo;
 public class Cliente {
     private int idCliente;
     private String dpi;
-    private String nombresClientes;
-    private String apellidosClientes;
+    private String nombresCliente;
+    private String apellidosCliente;
     private String direccion;
     private String telefono;
     private String sexo;
@@ -15,11 +15,11 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(int idCliente, String dpi, String nombresClientes, String apellidosClientes, String direccion, String telefono, String sexo, String nacionalidad) {
+    public Cliente(int idCliente, String dpi, String nombresCliente, String apellidosCliente, String direccion, String telefono, String sexo, String nacionalidad) {
         this.idCliente = idCliente;
         this.dpi = dpi;
-        this.nombresClientes = nombresClientes;
-        this.apellidosClientes = apellidosClientes;
+        this.nombresCliente = nombresCliente;
+        this.apellidosCliente = apellidosCliente;
         this.direccion = direccion;
         this.telefono = telefono;
         this.sexo = sexo;
@@ -42,20 +42,20 @@ public class Cliente {
         this.dpi = dpi;
     }
 
-    public String getNombresClientes() {
-        return nombresClientes;
+    public String getNombresCliente() {
+        return nombresCliente;
     }
 
-    public void setNombresClientes(String nombresClientes) {
-        this.nombresClientes = nombresClientes;
+    public void setNombresCliente(String nombresCliente) {
+        this.nombresCliente = nombresCliente;
     }
 
-    public String getApellidosClientes() {
-        return apellidosClientes;
+    public String getApellidosCliente() {
+        return apellidosCliente;
     }
 
-    public void setApellidosClientes(String apellidosClientes) {
-        this.apellidosClientes = apellidosClientes;
+    public void setApellidosCliente(String apellidosCliente) {
+        this.apellidosCliente = apellidosCliente;
     }
 
     public String getDireccion() {
@@ -89,5 +89,7 @@ public class Cliente {
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
+
+  
     
 }

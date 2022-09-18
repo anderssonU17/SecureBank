@@ -27,8 +27,8 @@ public class ClienteDAO {
             while(rs.next()){
                 Cliente cl = new Cliente();
                 cl.setIdCliente(rs.getInt(1));
-                cl.setNombresClientes(rs.getString(2));
-                cl.setApellidosClientes(rs.getString(3));
+                cl.setNombresCliente(rs.getString(2));
+                cl.setApellidosCliente(rs.getString(3));
                 cl.setDireccion(rs.getString(4));
                 cl.setTelefono(rs.getString(5));
                 cl.setNacionalidad(rs.getString(6));

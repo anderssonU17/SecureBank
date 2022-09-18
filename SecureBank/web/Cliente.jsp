@@ -220,6 +220,10 @@ body {
 }
 </style>
 
+<%--FIN DE AÑADIR ESTILOS --%>
+
+
+
     <section class="seccion-perfil-usuario">
         <div class="perfil-usuario-header">
             <div class="perfil-usuario-portada">
@@ -231,9 +235,10 @@ body {
                 </div>
             </div>
         </div>
+        
         <div class="perfil-usuario-body">
             <div class="perfil-usuario-bio">
-                <h3 class="titulo">Hector Juan Diego Navarro Medina</h3>
+                <h3 class="titulo">${cliente.getNombresCliente()}</h3>
             </div>
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
