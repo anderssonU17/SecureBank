@@ -28,10 +28,10 @@
             <a href="#" class="logo">Secure<span>Bank</span></a>
         
             <ul class="navbar">
-                <li><a href="#">Principal</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Principal">Principal</a></li>
+                <li><a href="#Seguridad">Seguridad</a></li>
+                <li><a href="#Servicio">Servicio</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
         
             <div class="h-icons">
@@ -40,7 +40,7 @@
             </div>
         </header>
         
-        <section class="home" id="home">
+        <section class="home" id="Principal">
             <div class="home-text">
                 <h1 style="font-family: Raleway, sans-serif"><span>Bienvenido</span> a su seguridad financiera!</h1>
                 <p style="font-family: Raleway, sans-serif">Tendras una gran comodidad al recibir nuestros servicios <br>y darte una salud financiera para ti!</p>
@@ -99,7 +99,7 @@
         </section>
         
         
-        <section class="about" id="about">
+        <section class="about" id="Seguridad">
             <div class="about-img">
                 <img src="img/secure.svg">
             </div>
@@ -114,6 +114,100 @@
             </div>
         </section>
         
+        <%--SECCION DEL MENU--%>
+        <section class="menu" id="Servicio">
+            <div class="main-text">
+                <h2>Nuestros Servicios</h2>
+                <p>Escoge alguno de los servicios<br>que deseas utilizar</p>
+            </div>
+            
+            <div class="menu-content">
+              <div class="row">  
+                  <img src="img/pagos.png">
+                  <div class="menu-text">
+                      <div class="menu-left">
+                          <h4>Pagos a Realizar</h4>
+                       </div>
+                    </div>
+                  <p>Realiza tus pagos a nuestros proveedores registrados.</p>
+                </div>
+                
+                  <div class="row">  
+                  <img src="img/Prestamo.png">
+                  <div class="menu-text">
+                      <div class="menu-left">
+                          <h4>Prestamos</h4>
+                       </div>
+                    </div>
+                  <p>Pide un prestamo y escoge tu plazo para pagarlo.</p>
+                </div>
+                
+                              <div class="row">  
+                  <img src="img/pagosH.png">
+                  <div class="menu-text">
+                      <div class="menu-left">
+                          <h4>Pagos Realizados</h4>
+                       </div>
+                    </div>
+                  <p>Revisa tus pagos realizados en nuestro banco.</p>
+                </div>
+                
+                              <div class="row">  
+                  <img src="img/proveedor.png">
+                  <div class="menu-text">
+                      <div class="menu-left">
+                          <h4>Proveedores</h4>
+                       </div>
+                    </div>
+                  <p>Encuentra a tus proveedores para realizar tus pagos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <%--SECCION DE CONTACTO--%>
+        
+        <section class="contact" id="Contacto">
+            <div class="main-contact">
+                <div class="contact-content">
+                    <h4>Funciones</h4>
+                    <li><a href="#">Principal</a></li>
+                    <li><a href="#">Seguridad</a></li>
+                    <li><a href="#">Servicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </div>
+                
+                <div class="contact-content">
+                    <h4>Otros</h4>
+                    <li><a href="#">Bienvenida</a></li>
+                    <li><a href="#">Seguridad</a></li>
+                    <li><a href="#">Pagos</a></li>
+                    <li><a href="#">Horarios</a></li>
+                </div>
+                
+                <div class="contact-content">
+                    <h4>Contactanos</h4>
+                    <li><a href="#">22057898</a></li>
+                    <li><a href="#">SecureBank@gmail.com</a></li>
+                    <li><a href="#">FAX</a></li>
+                </div>
+                
+                <div class="contact-content">
+                    <h4>Redes Sociales</h4>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </div>
+            </div>
+        </section>
+        
+        <div class="last-text">
+            <p>© 2022 Todos los Derechos Reservados a SecureBank Entity.</p>
+        </div>
+        
+        <a href="#home" class="scroll-top">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+        <script src="https://unpkg.com/scrollreveal"></script>
         <script type="text/javascript" src="js/script.js"></script>
         
     </body>
