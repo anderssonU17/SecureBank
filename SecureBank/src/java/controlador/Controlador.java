@@ -28,19 +28,11 @@ public class Controlador extends HttpServlet {
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-                PagoServicioDAO pServicioDAO = new PagoServicioDAO();
-        
-        List<Proveedor> listarPagoServicio = pServicioDAO.listarProveedor();
-        request.setAttribute("PagoServicio", listarPagoServicio);
-        request.getRequestDispatcher("AgregarPagoServicio.jsp").forward(request, response);
-        
-        
         String menu = request.getParameter("menu");
         String accion = request.getParameter("accion");
         
         if(menu.equals("Principal")){ //Cambiar de principal a otro que sea necesario
-            request.getRequestDispatcher("Principal.jsp").forward(request, response);
+            request.getRequestDispatcher("AgregarPagoServicio.jsp").forward(request, response);
         }else if(menu.equals("PagoServicio")){
             switch(accion){
                 case "Listar":
@@ -50,19 +42,16 @@ public class Controlador extends HttpServlet {
                 case "Agregar":
                     String Proveedor = request.getParameter("txtProveedor");
                     String Moneda = request.getParameter("txtMoneda");
+                    String fecha = request.getParameter("txtFecha");
+                    String Monto = request.getParameter("txtMonto");
                     pagoServicio.setNitProveedor(Proveedor);
                     pagoServicio.setIdMoneda(Moneda);
+                    pagoServicio.setFecha(fecha);
+                    pagoServicio.setMonto(Monto);
                     pagoServicioDAO.add(pagoServicio);
-                    request.getRequestDispatcher("Controlador?menu=PagoServicio&accion=Listar").forward(request, response);
-                    break;
-                case "Eliminar":
-                    codServicio = Integer.parseInt(request.getParameter("identificadorPago"));
-                    pagoServicioDAO.eliminar(codServicio);
-                    request.getRequestDispatcher("Controlador?menu=PagoServicio&accion=Listar").forward(request, response);
+                    request.getRequestDispatcher("Controlador?menu=Proveedor&accion=Listar").forward(request, response);
                     break;
             }
-        }else if(menu.equals("")){
-            
         }
     }
 

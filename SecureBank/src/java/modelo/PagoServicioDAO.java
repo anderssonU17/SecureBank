@@ -68,7 +68,8 @@ public class PagoServicioDAO implements CRUD{
                 pservicio.setNitProveedor(rs.getString("nitProveedor"));
                 pservicio.setMonto(rs.getString("Monto"));
                 pservicio.setIdMoneda(rs.getString("idMoneda"));
-                pservicio.setFechaYHora(rs.getDate("fechaYHora"));
+                pservicio.setFecha(rs.getString("fechaYHora"));
+                
             }
         }catch(Exception e){
             e.printStackTrace();
@@ -78,7 +79,7 @@ public class PagoServicioDAO implements CRUD{
 
     @Override
     public boolean add(PagoServicio per) {
-        String sql = "insert into PagoServicio(Proveedor, Moneda) values(?, ?)";
+        String sql = "insert into PagoServicio(Proveedor, Moneda) values(?, ?, ?, ?)";
         try{
             con = conect.Conexion();
             ps = con.prepareCall(sql);
@@ -86,12 +87,14 @@ public class PagoServicioDAO implements CRUD{
             while(rs.next()){
                 ps.setString(1, per.getNitProveedor());
                 ps.setString(2, per.getIdMoneda());
+                ps.setString(3, per.getFecha());
+                ps.setString(4, per.getMonto());
                 ps.executeUpdate();
             }
         }catch(Exception e){
             e.printStackTrace();
+            System.out.println("No se pudo agregar");
         }
-        System.out.println("No se pudo agregar");
         return false; //Cambiar
     }
 

@@ -20,7 +20,7 @@
     </head>
     <body>
         <div>
-            <h2>Agregar Nuevo Proveedor</h2>
+            <h2>Nuevo Pago Servicio</h2>
             <form class="form-horizontal" action="Controlador" method="post">
                 <div>
                     <%
@@ -59,9 +59,19 @@
                     <option value="0" _msthash="239915" _msttexthash="156741"><%=perM.nombreMoneda %></option>
                 </select><br><br>
                 <%}%>
-                <input class="btn btn-primary" type="submit" name="accion" value="Agregar"><br><br>
                 </div>
             </form>
+        </div>
+        <div class="container">
+            <div class="col-lg-5">
+                <form action="Controlador">
+                    <label for="areas" _msthash="61815" _msttexthash="250705">Fecha: </label> <br><br>
+                    <input class="form-control" type ="text" name="txtFecha"><br><br>
+                    <label for="areas" _msthash="61815" _msttexthash="250705">Monto: </label><br><br>
+                    <input class="form-control" type="text" name="txtMonto"><br><br>
+                    <input class="btn btn-primary" type="submit" name="accion" value="Agregar"><br><br>
+                </form>
+            </div>
         </div>
     </body>
 </html>
