@@ -67,10 +67,10 @@ public final class Principal_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <a href=\"#\" class=\"logo\">Secure<span>Bank</span></a>\n");
       out.write("        \n");
       out.write("            <ul class=\"navbar\">\n");
-      out.write("                <li><a href=\"#\">Principal</a></li>\n");
+      out.write("                <li><a href=\"#Principal\">Principal</a></li>\n");
       out.write("                <li><a href=\"#Seguridad\">Seguridad</a></li>\n");
-      out.write("                <li><a href=\"#\">Servicio</a></li>\n");
-      out.write("                <li><a href=\"#\">Contacto</a></li>\n");
+      out.write("                <li><a href=\"#Servicio\">Servicio</a></li>\n");
+      out.write("                <li><a href=\"#Contacto\">Contacto</a></li>\n");
       out.write("            </ul>\n");
       out.write("        \n");
       out.write("            <div class=\"h-icons\">\n");
