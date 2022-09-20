@@ -46,22 +46,22 @@
                 </div>
                  <div class="box">
                      <img src="img/Rent a Car.SA.jpg" width="150" height="85"></i>
-                    <h5>Otros Pagos</h5>
+                    <h5>Rent a Car.SA</h5>
                     
                 </div>
                  <div class="box">
                      <img src="img/macrosistemas.png" width="100" height="85"></i>
-                    <h5>Otros Pagos</h5>
+                    <h5>Macrosistemas</h5>
                     
                 </div>
                 <div class="box">
                      <img src="img/Guateprenda.jpg" width="100" height="85"></i>
-                    <h5>Otros Pagos</h5>
+                    <h5>Guateprenda</h5>
                     
                 </div>
                 <div class="box">
                      <img src="img/EEGSA.jpg" width="100" height="85"></i>
-                    <h5>Otros Pagos</h5>
+                    <h5>EEGSA</h5>
                     
                 </div>
                  <div class="box">
