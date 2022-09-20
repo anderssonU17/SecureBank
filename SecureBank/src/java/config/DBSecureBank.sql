@@ -58,6 +58,7 @@ insert into Usuario(idUsuario, nombreUsuario, idCliente, contraseña, correo, fe
 	values (902, 'abalcarcel', 102, '3GomeZ.400', 'egomez-2021400@kinal.edu.gt', '2021-8-11');
 
 select * from Usuario;
+select * from Usuario where nombreUsuario = 'aurrea' and contraseña = 123; 
 
 -- -------------------------------------------------------------------------------------------------------------------------------
 -- ------------------------------------------------------- TABLA MONEDA --------------------------------------------------------

@@ -44,7 +44,7 @@
             <div class="home-text">
                 <h1 style="font-family: Raleway, sans-serif"><span>Bienvenido</span> a su seguridad financiera!</h1>
                 <p style="font-family: Raleway, sans-serif">Tendras una gran comodidad al recibir nuestros servicios <br>y darte una salud financiera para ti!</p>
-                <a href="#" class="btn" style="font-family: Raleway, sans-serif">Inicia Sesion</a>
+                <a href="#" class="btn" style="font-family: Raleway, sans-serif">Hola ${nombreUsuario.getNombreUsuario()}</a>
             </div>
             
             <div class="home-img">
