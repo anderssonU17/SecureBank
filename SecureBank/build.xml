@@ -7,8 +7,8 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
-<project name="SecureBank-Prestamo585" default="default" basedir=".">
-    <description>Builds, tests, and runs the project SecureBank-Prestamo585.</description>
+<project name="SecureBank" default="default" basedir=".">
+    <description>Builds, tests, and runs the project SecureBank.</description>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
