@@ -1,0 +1,271 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class Principal_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<style>\r\n");
+      out.write("    body{\r\n");
+      out.write("        font-family: Raleway, sans-serif; \r\n");
+      out.write("    }\r\n");
+      out.write("</style>\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/estilop.css\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://unpkg.com/boxicons@latest/css/boxicons.min.css\">\r\n");
+      out.write("        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\r\n");
+      out.write("        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\r\n");
+      out.write("        <link href=\"https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap\" rel=\"stylesheet\">\r\n");
+      out.write("        \r\n");
+      out.write("        <title>Principal</title>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        <header>\r\n");
+      out.write("            <a href=\"#\" class=\"logo\">Secure<span>Bank</span></a>\r\n");
+      out.write("        \r\n");
+      out.write("            <ul class=\"navbar\">\r\n");
+      out.write("                <li><a href=\"#Principal\">Principal</a></li>\r\n");
+      out.write("                <li><a href=\"#Seguridad\">Seguridad</a></li>\r\n");
+      out.write("                <li><a href=\"#Servicio\">Servicio</a></li>\r\n");
+      out.write("                <li><a href=\"#Contacto\">Contacto</a></li>\r\n");
+      out.write("            </ul>\r\n");
+      out.write("        \r\n");
+      out.write("            <div class=\"h-icons\">\r\n");
+      out.write("                <a href=\"Controlador?menu=Cliente\" style=\"color: white; font-weight: bold\">Perfil</a>\r\n");
+      out.write("                <div class=\"bx bx-menu\" id=\"menu-icon\"></div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </header>\r\n");
+      out.write("        \r\n");
+      out.write("        <section class=\"home\" id=\"Principal\">\r\n");
+      out.write("            <div class=\"home-text\">\r\n");
+      out.write("                <h1 style=\"font-family: Raleway, sans-serif\"><span>Bienvenido</span> a su seguridad financiera!</h1>\r\n");
+      out.write("                <p style=\"font-family: Raleway, sans-serif\">Tendras una gran comodidad al recibir nuestros servicios <br>y darte una salud financiera para ti!</p>\r\n");
+      out.write("                <a href=\"#\" class=\"btn\" style=\"font-family: Raleway, sans-serif\">Hola ");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${nombreUsuario.getNombreUsuario()}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</a>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            \r\n");
+      out.write("            <div class=\"home-img\">\r\n");
+      out.write("                <img src=\"img/finance.svg\">\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\r\n");
+      out.write("        \r\n");
+      out.write("        ");
+      out.write("\r\n");
+      out.write("        <section class=\"container\">\r\n");
+      out.write("            <div class=\"main-text\">\r\n");
+      out.write("                <h2>Horarios</h2>\r\n");
+      out.write("                <p>7:00 am - 17:00 pm</p>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            \r\n");
+      out.write("            <div class=\"container-box\">\r\n");
+      out.write("                <div class=\"c-mainbx\">\r\n");
+      out.write("                    <div class=\"container-img\">\r\n");
+      out.write("                        <img src=\"img/banco.png\">\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                    <div class=\"container-text\">\r\n");
+      out.write("                        <p>SecureBank Zona 1</p>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            \r\n");
+      out.write("            <div class=\"c-mainbx\">\r\n");
+      out.write("                    <div class=\"container-img\">\r\n");
+      out.write("                        <img src=\"img/banco.png\">\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                    <div class=\"container-text\">\r\n");
+      out.write("                        <p>SecureBank Miraflores</p>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            \r\n");
+      out.write("            <div class=\"c-mainbx\">\r\n");
+      out.write("                    <div class=\"container-img\">\r\n");
+      out.write("                        <img src=\"img/banco.png\">\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                    <div class=\"container-text\">\r\n");
+      out.write("                        <p>SecureBank Zona 18</p>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            \r\n");
+      out.write("            <div class=\"c-mainbx\">\r\n");
+      out.write("                    <div class=\"container-img\">\r\n");
+      out.write("                        <img src=\"img/banco.png\">\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                    <div class=\"container-text\">\r\n");
+      out.write("                        <p>SecureBank Portales</p>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>      \r\n");
+      out.write("        </section>\r\n");
+      out.write("        \r\n");
+      out.write("        \r\n");
+      out.write("        <section class=\"about\" id=\"Seguridad\">\r\n");
+      out.write("            <div class=\"about-img\">\r\n");
+      out.write("                <img src=\"img/secure.svg\">\r\n");
+      out.write("            </div>\r\n");
+      out.write("            \r\n");
+      out.write("            <div class=\"about-text\">\r\n");
+      out.write("                <h2>Innovaciones para <br> Tu Bienestar</h2>\r\n");
+      out.write("                <p>Innovamos una banca electrónica con una amplia cantidad de funcionalidades para que fuera más cómodo.\r\n");
+      out.write("                <br><br>\r\n");
+      out.write("                Nuevas formas de protección ante cualquier ataque o cambio de identidad que puedas sufrir ante cualquier percance.\r\n");
+      out.write("                </p>\r\n");
+      out.write("                <a href=\"#\" class=\"btn\">Boton x</a>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\r\n");
+      out.write("        \r\n");
+      out.write("        ");
+      out.write("\r\n");
+      out.write("        <section class=\"menu\" id=\"Servicio\">\r\n");
+      out.write("            <div class=\"main-text\">\r\n");
+      out.write("                <h2>Nuestros Servicios</h2>\r\n");
+      out.write("                <p>Escoge alguno de los servicios<br>que deseas utilizar</p>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            \r\n");
+      out.write("            <div class=\"menu-content\">\r\n");
+      out.write("              <div class=\"row\">  \r\n");
+      out.write("                  <img src=\"img/pagos.png\">\r\n");
+      out.write("                  <div class=\"menu-text\">\r\n");
+      out.write("                      <div class=\"menu-left\">\r\n");
+      out.write("                          <h4>Pagos a Realizar</h4>\r\n");
+      out.write("                       </div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                  <p>Realiza tus pagos a nuestros proveedores registrados.</p>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                \r\n");
+      out.write("                  <div class=\"row\">  \r\n");
+      out.write("                  <img src=\"img/prestamo.png\">\r\n");
+      out.write("                  <div class=\"menu-text\">\r\n");
+      out.write("                      <div class=\"menu-left\">\r\n");
+      out.write("                          <h4>Prestamos</h4>\r\n");
+      out.write("                       </div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                  <p>Pide un prestamo y escoge tu plazo para pagarlo.</p>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                \r\n");
+      out.write("                              <div class=\"row\">  \r\n");
+      out.write("                  <img src=\"img/pagosH.png\">\r\n");
+      out.write("                  <div class=\"menu-text\">\r\n");
+      out.write("                      <div class=\"menu-left\">\r\n");
+      out.write("                          <h4>Pagos Realizados</h4>\r\n");
+      out.write("                       </div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                  <p>Revisa tus pagos realizados en nuestro banco.</p>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                \r\n");
+      out.write("                              <div class=\"row\">  \r\n");
+      out.write("                  <img src=\"img/proveedor.png\">\r\n");
+      out.write("                  <div class=\"menu-text\">\r\n");
+      out.write("                      <div class=\"menu-left\">\r\n");
+      out.write("                          <h4>Proveedores</h4>\r\n");
+      out.write("                       </div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                  <p>Encuentra a tus proveedores para realizar tus pagos.</p>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\r\n");
+      out.write("        \r\n");
+      out.write("        ");
+      out.write("\r\n");
+      out.write("        \r\n");
+      out.write("        <section class=\"contact\" id=\"Contacto\">\r\n");
+      out.write("            <div class=\"main-contact\">\r\n");
+      out.write("                <div class=\"contact-content\">\r\n");
+      out.write("                    <h4>Funciones</h4>\r\n");
+      out.write("                    <li><a href=\"#\">Principal</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">Seguridad</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">Servicio</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">Contacto</a></li>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                \r\n");
+      out.write("                <div class=\"contact-content\">\r\n");
+      out.write("                    <h4>Otros</h4>\r\n");
+      out.write("                    <li><a href=\"#\">Bienvenida</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">Seguridad</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">Pagos</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">Horarios</a></li>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                \r\n");
+      out.write("                <div class=\"contact-content\">\r\n");
+      out.write("                    <h4>Contactanos</h4>\r\n");
+      out.write("                    <li><a href=\"#\">22057898</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">SecureBank@gmail.com</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">FAX</a></li>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                \r\n");
+      out.write("                <div class=\"contact-content\">\r\n");
+      out.write("                    <h4>Redes Sociales</h4>\r\n");
+      out.write("                    <li><a href=\"#\">Facebook</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">Instagram</a></li>\r\n");
+      out.write("                    <li><a href=\"#\">Twitter</a></li>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </section>\r\n");
+      out.write("        \r\n");
+      out.write("        <div class=\"last-text\">\r\n");
+      out.write("            <p>© 2022 Todos los Derechos Reservados a SecureBank Entity.</p>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        \r\n");
+      out.write("        <a href=\"#home\" class=\"scroll-top\">\r\n");
+      out.write("            <i class='bx bx-up-arrow-alt'></i>\r\n");
+      out.write("        </a>\r\n");
+      out.write("        <script src=\"https://unpkg.com/scrollreveal\"></script>\r\n");
+      out.write("        <script type=\"text/javascript\" src=\"js/script.js\"></script>\r\n");
+      out.write("        \r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>\r\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

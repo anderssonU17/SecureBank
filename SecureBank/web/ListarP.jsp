@@ -5,9 +5,7 @@
 --%>
 
 <%@page import="java.util.Iterator"%>
-<%@page import="model.Prestamo"%>
 <%@page import="java.util.List"%>
-<%@page import="modelDAO.PrestamoDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
