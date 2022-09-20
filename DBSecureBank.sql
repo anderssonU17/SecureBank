@@ -129,7 +129,7 @@ select * from Cuenta;
 
 
 Create table Prestamo(
-	idPrestamo int not null, 
+	idPrestamo int not null auto_increment, 
     idCliente int not null, 
     plazoMeses varchar(50) not null,
     montoPrestamo int not null,
@@ -139,12 +139,12 @@ Create table Prestamo(
     references Cliente(idCliente)
 );
 
-insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-values (456481, 100, '6 meses', 1000, now()); 
-insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-values(46548, 101, '2 meses', 2500, now());
-insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-values(465811, 102, '12 meses', 5000, now());
+insert into Prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
+values (100, '6 meses', 1000, now()); 
+insert into Prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
+values(101, '2 meses', 2500, now());
+insert into Prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
+values(102, '12 meses', 5000, now());
 
 select * from Prestamo; 
 -- -------------------------------------------------------------------------------------------------------------------------------
@@ -171,7 +171,7 @@ select * from Proveedor;
 -- --------------------------------------------------------------------------------------------------------------------------------
         
 Create table PagoServicio(
-	identificadorPago int not null,
+	identificadorPago int not null auto_increment,
     idCliente int not null, -- FORANEA
     nitProveedor varchar (15) not null, -- FORANEA
     Monto varchar (45) not null, 
@@ -186,12 +186,12 @@ Create table PagoServicio(
 		references Moneda (idMoneda)
 );
 
-insert into PagoServicio(identificadorPago, idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (1100, 100, '458795', 25000, 500, now());
-insert into PagoServicio(identificadorPago, idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (1101, 101, '4564562', 150000, 501, now());
-insert into PagoServicio(identificadorPago, idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (1102, 102, '45822', 15000, 502, now());
+insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
+	values (100, '458795', 25000, 500, now());
+insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
+	values (101, '4564562', 150000, 501, now());
+insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
+	values (102, '45822', 15000, 502, now());
     
 select * from PagoServicio;
 

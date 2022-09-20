@@ -2,38 +2,37 @@
 package modelo;
 
 import config.Conexion;
-import interfaces.CRUD;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-import modelo.Prestamo;
 
-public class PrestamoDAO implements CRUD{
-    Conexion conect = new Conexion();
+public class PrestamoDAO{
+    Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
-    Prestamo nPrestamo = new Prestamo();
+    int resp;
+    
+    //METODO LISTAR 
+    
 
-    @Override
     public List listar() {
-        ArrayList <Prestamo> listaPrestamo = new ArrayList<>();
         String sql = "select * from Prestamo";
+        ArrayList <Prestamo> listaPrestamo = new ArrayList<>();
         try{
-            con = conect.getConnection();
+            con = cn.Conexion();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while(rs.next()){
-                Prestamo nuevoPrestamo = new Prestamo();
-                nuevoPrestamo.setIdPrestamo(rs.getInt("idPrestamo"));
-                nuevoPrestamo.setIdCliente(rs.getInt("idCliente"));
-                nuevoPrestamo.setPlazoMeses(rs.getString("plazoMeses"));
-                nuevoPrestamo.setMontoPrestamo(rs.getInt("montoPrestamo"));
-                nuevoPrestamo.setFechaPrestamo(rs.getDate("fechaPrestamo"));
-                listaPrestamo.add(nuevoPrestamo);
-                
+                Prestamo pres = new Prestamo();
+                pres.setIdPrestamo(rs.getInt("idPrestamo"));
+                pres.setIdCliente(rs.getInt("idCliente"));
+                pres.setPlazoMeses(rs.getString("plazoMeses"));
+                pres.setMontoPrestamo(rs.getInt("montoPrestamo"));
+                pres.setFechaPrestamo(rs.getDate("fechaPrestamo"));
+                listaPrestamo.add(pres);   
             }
         }catch(Exception e){
             e.printStackTrace();
@@ -42,49 +41,23 @@ public class PrestamoDAO implements CRUD{
         return listaPrestamo;
     }
 
-    @Override
-    public Prestamo Listar(int id) {
-        String sql = "select * from Prestamo where idPrestamo =" + id;
-        try{
-            con = conect.getConnection();
-            ps = con.prepareStatement(sql);
-            rs = ps.executeQuery();
-            while(rs.next()){
-                nPrestamo.setIdPrestamo(rs.getInt("idPrestamo"));
-                nPrestamo.setIdCliente(rs.getInt("idCliente"));
-                nPrestamo.setPlazoMeses(rs.getString("plazoMeses"));
-                nPrestamo.setMontoPrestamo(rs.getInt("montoPrestamo"));
-                nPrestamo.setFechaPrestamo(rs.getDate("fechaPrestamo"));
-            }
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        return nPrestamo;
-    }
 
-    @Override
-    public boolean Agregar(Prestamo pres) {
-        //insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-        String sql = "insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo) values('"+pres.getIdPrestamo()+"','"+pres.getIdCliente()+"','"+pres.getPlazoMeses()+"', '"+pres.getMontoPrestamo()+"', '"+pres.getFechaPrestamo()+"')";
+    public int Agregar(Prestamo pres) {
+        //insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo);
+        String sql = "Insert into prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo) values(?,?,?,?,?)";
         try{
-            con = conect.getConnection();
+            con = cn.Conexion();
             ps = con.prepareStatement(sql);
+            ps.setInt(1, pres.getIdCliente());
+            ps.setString(2, pres.getPlazoMeses());
+            ps.setDouble(3, pres.getMontoPrestamo());
+            ps.setDate(4, pres.getFechaPrestamo());
             ps.executeUpdate();
         }catch(Exception e){
             e.printStackTrace();
+            System.out.println("No se pudo agregar el registro");
         }
         
-        return false;
+        return resp;
     }
-
-    @Override
-    public boolean Editar(Prestamo Pres) {
-        return false;
-    }
-
-    @Override
-    public boolean Eliminar(int id) {
-        return false;
-    }
-    
 }

@@ -74,21 +74,16 @@
                         <th class="text-center">FECHA</th>
                     </tr>
                 </thead>
-                <%
-                    PrestamoDAO dao = new PrestamoDAO(); 
-                    List <Prestamo> listaPrestamo = dao.listar();
-                    Iterator<Prestamo> iterator = listaPrestamo.iterator();
-                    Prestamo pres = null;
-                    while (iterator.hasNext()){
-                        pres = iterator.next();
-                %>
                 <tbody>
+                <c:forEach>
+                    
+                </c:forEach>
                     <tr>
                         <td><%= pres.getIdPrestamo()%></td>
                         <td><%= pres.getIdCliente()%></td>
                         <td><%= pres.getPlazoMeses()%></td>
-                        <td><%= pres.getMontoPrestamo()%></td>
-                        <td><%= pres.getFechaPrestamo()%></td>
+                        <td><%></td>
+                        <td><></td>
 
                     </tr>
                     <%}%>
