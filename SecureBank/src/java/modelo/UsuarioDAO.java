@@ -17,7 +17,7 @@ public class UsuarioDAO {
         
         Usuario usuario = new Usuario();
     
-        String sql = "select * from Usuario where idUsuario = ? and contraseña = ?";
+        String sql = "select * from Usuario where nombreUsuario= ? and contraseña = ?";
         try{
             con = cn.Conexion(); 
             ps = con.prepareStatement(sql);
@@ -26,8 +26,9 @@ public class UsuarioDAO {
             rs = ps.executeQuery();
             while(rs.next()){
                 usuario.setIdUsuario(rs.getInt("idUsuario"));
-                usuario.setUsuario(rs.getString("idusuario"));
+                usuario.setNombreUsuario(rs.getString("nombreUsuario"));
                 usuario.setContraseña(rs.getString("contraseña"));
+                usuario.setCorreo(rs.getString("correo"));
             }
         
         }catch(Exception e){

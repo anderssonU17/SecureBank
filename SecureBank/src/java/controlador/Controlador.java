@@ -14,13 +14,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.Cliente;
 import modelo.ClienteDAO;
+import modelo.Usuario;
+import modelo.UsuarioDAO;
 
 /**
  *
  * @author USER
  */
 public class Controlador extends HttpServlet {
-
+    Usuario usuario = new Usuario(); 
+    UsuarioDAO usuarioDAO = new UsuarioDAO(); 
     Cliente cliente = new Cliente(); 
     ClienteDAO clienteDAO = new ClienteDAO(); 
     
@@ -31,7 +34,7 @@ public class Controlador extends HttpServlet {
         String accion = request.getParameter("accion");
         
         if(menu.equals("Principal")){
-           request.getRequestDispatcher("Principal.jsp").forward(request, response); 
+           request.getRequestDispatcher("Principal.jsp").forward(request, response);
         }else if (menu.equals("Cliente")){
             switch(accion){
                 case "Listar":
@@ -39,6 +42,7 @@ public class Controlador extends HttpServlet {
                     request.setAttribute("cliente", listaCliente);
                     break;
             }
+            request.getRequestDispatcher("Cliente.jsp").forward(request, response);
         }
            
     }

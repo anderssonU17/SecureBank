@@ -4,20 +4,22 @@ package modelo;
 import java.sql.Date;
 
 public class Usuario {
-    private int idUsuario; 
-    private String usuario; 
-    private String Contraseña; 
-    private int idEstadoUsuario; 
-    private Date fechaCreacion; 
+    private int idUsuario;
+    private String nombreUsuario;
+    private String idCliente;
+    private String contraseña; 
+    private String correo; 
+    private Date fechaCreacion;
 
     public Usuario() {
     }
 
-    public Usuario(int idUsuario, String usuario, String Contraseña, int idEstadoUsuario, Date fechaCreacion) {
+    public Usuario(int idUsuario, String nombreUsuario, String idCliente, String contraseña, String correo, Date fechaCreacion) {
         this.idUsuario = idUsuario;
-        this.usuario = usuario;
-        this.Contraseña = Contraseña;
-        this.idEstadoUsuario = idEstadoUsuario;
+        this.nombreUsuario = nombreUsuario;
+        this.idCliente = idCliente;
+        this.contraseña = contraseña;
+        this.correo = correo;
         this.fechaCreacion = fechaCreacion;
     }
 
@@ -29,28 +31,36 @@ public class Usuario {
         this.idUsuario = idUsuario;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public String getNombreUsuario() {
+        return nombreUsuario;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
+    }
+
+    public String getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(String idCliente) {
+        this.idCliente = idCliente;
     }
 
     public String getContraseña() {
-        return Contraseña;
+        return contraseña;
     }
 
-    public void setContraseña(String Contraseña) {
-        this.Contraseña = Contraseña;
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
     }
 
-    public int getIdEstadoUsuario() {
-        return idEstadoUsuario;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setIdEstadoUsuario(int idEstadoUsuario) {
-        this.idEstadoUsuario = idEstadoUsuario;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
     public Date getFechaCreacion() {
@@ -62,4 +72,5 @@ public class Usuario {
     }
     
     
+
 }
