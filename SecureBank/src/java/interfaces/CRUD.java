@@ -2,7 +2,7 @@
 package interfaces;
 
 import java.util.List;
-import model.Prestamo;
+import modelo.Prestamo;
 
 public interface CRUD {
     public List listar();

@@ -1,14 +1,14 @@
 
-package modelDAO;
+package modelo;
 
-import configuration.Conexion;
+import config.Conexion;
 import interfaces.CRUD;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-import model.Prestamo;
+import modelo.Prestamo;
 
 public class PrestamoDAO implements CRUD{
     Conexion conect = new Conexion();

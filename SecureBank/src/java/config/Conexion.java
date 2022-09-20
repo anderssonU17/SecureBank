@@ -1,5 +1,5 @@
 
-package configuration;
+package config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,18 +8,14 @@ import java.sql.DriverManager;
 public class Conexion {
     Connection conexion;
     
-    public Conexion(){
+    public Connection Conexion(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/DBSecureBank?useSSL=false","root","enner1-2");
+            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/DBSecureBank?useSSL=false","root","andersson2004");
         }catch(Exception e){
             e.printStackTrace();
             System.out.println("La conexion no se puede establecer");
         }
-    }
-    
-    public Connection getConnection(){
         return conexion;
-    }
-       
+    }      
 }
