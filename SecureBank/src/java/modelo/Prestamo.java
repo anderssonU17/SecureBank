@@ -1,5 +1,5 @@
 
-package model;
+package modelo;
 
 import java.sql.Date;
 
