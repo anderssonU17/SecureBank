@@ -35,7 +35,7 @@
             </ul>
         
             <div class="h-icons">
-                <a href="#"><i class='bx bx-log-in'></i></a>
+                <a href="Controlador?menu=Cliente" style="color: white; font-weight: bold">Perfil</a>
                 <div class="bx bx-menu" id="menu-icon"></div>
             </div>
         </header>

@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
 </head>
-
+<title>Perfil</title>
 <body>
  
 <style type="text/css">
@@ -238,7 +238,7 @@ body {
         
         <div class="perfil-usuario-body">
             <div class="perfil-usuario-bio">
-                <h3 class="titulo">${cliente.getNombresCliente()}</h3>
+                <h3 class="titulo">${nombreUsuario.getNombreUsuario()}</h3>
             </div>
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
@@ -254,7 +254,24 @@ body {
             </div>
         </div>
     </section>
+
+        <div class="last-text">
+            <a href="Controlador?menu=Principal" style="color: gray; text-decoration: none"><p href="Controlador?menu=Principal">Regresar</p></a>
+        </div>
 <style>
+
+.last-text p{
+    text-align: center; 
+    padding: 25px;  
+    font-size: 20px; 
+    letter-spacing: 1px;
+}
+
+.last-text p:hover{
+    color: #00C2CB;
+    cursor: pointer;
+}
+
 .mensaje a {
     color: inherit;
     margin-right: .5rem;
@@ -266,7 +283,7 @@ body {
 }
 </style>
 <div class="mis-redes" style="display: block;position: fixed;bottom: 1rem;left: 1rem; opacity: 0.5; z-index: 1000;">
-    <p style="font-size: .75rem;">Apock graficos</p>
+    <p style="font-size: .75rem;"></p>
 </div>
 </body>
 </html>
