@@ -7,39 +7,52 @@ package controlador;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import modelo.PagoServicio;
+import modelo.PagoServicioDAO;
 
 /**
  *
  * @author USER
  */
 public class Controlador extends HttpServlet {
-
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+    PagoServicio pagoServicio = new PagoServicio();
+    PagoServicioDAO pagoServicioDAO = new PagoServicioDAO();
+    
+    int codServicio;
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Controlador</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet Controlador at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+        
+        String menu = request.getParameter("menu");
+        String accion = request.getParameter("accion");
+        
+        if(menu.equals("Principal")){ //Cambiar de principal a otro que sea necesario
+            request.getRequestDispatcher("Principal.jsp").forward(request, response);
+        }else if(menu.equals("PagoServicio")){
+            switch(accion){
+                case "Listar":
+                    List listarPagoServicio = pagoServicioDAO.listar();
+                    request.setAttribute("PagoServicio", listarPagoServicio);
+                    break;
+                case "Agregar":
+                    String Proveedor = request.getParameter("txtProveedor");
+                    String Moneda = request.getParameter("txtMoneda");
+                    pagoServicio.setNitProveedor(Proveedor);
+                    pagoServicio.setIdMoneda(Moneda);
+                    pagoServicioDAO.add(pagoServicio);
+                    request.getRequestDispatcher("Controlador?menu=PagoServicio&accion=Listar").forward(request, response);
+                    break;
+                case "Eliminar":
+                    codServicio = Integer.parseInt(request.getParameter("identificadorPago"));
+                    pagoServicioDAO.eliminar(codServicio);
+                    request.getRequestDispatcher("Controlador?menu=PagoServicio&accion=Listar").forward(request, response);
+                    break;
+            }
         }
     }
 
