@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div>
-                <img src="img/prestamo.png" class="mx_auto d-block" width="600" alt=""> 
+                <img src="img/prestamop.png" class="mx_auto d-block" width="600" alt=""> 
             </div>
             <div>
                 <div class="text-center">
