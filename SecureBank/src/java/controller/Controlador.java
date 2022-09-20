@@ -14,8 +14,8 @@ import modelDAO.PrestamoDAO;
 
 public class Controlador extends HttpServlet {
 
-    String listar = "view/listar.jsp";
-    String Agregar = "view/agregar.jsp";
+    String listar = "listar.jsp";
+    String Agregar = "agregar.jsp";
     Prestamo nuevoPrestamo = new Prestamo();
     PrestamoDAO nuevoPrestamoDAO = new PrestamoDAO();
     int idPrestamo;
