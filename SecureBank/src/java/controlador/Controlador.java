@@ -22,8 +22,6 @@ import modelo.UsuarioDAO;
  * @author USER
  */
 public class Controlador extends HttpServlet {
-    Usuario usuario = new Usuario(); 
-    UsuarioDAO usuarioDAO = new UsuarioDAO(); 
     Cliente cliente = new Cliente(); 
     ClienteDAO clienteDAO = new ClienteDAO(); 
     
@@ -35,6 +33,7 @@ public class Controlador extends HttpServlet {
         
         if(menu.equals("Principal")){
            request.getRequestDispatcher("Principal.jsp").forward(request, response);
+           
         }else if (menu.equals("Cliente")){
             switch(accion){
                 case "Listar":

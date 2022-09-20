@@ -133,7 +133,7 @@
                 </div>
                 
                   <div class="row">  
-                  <img src="img/Prestamo.png">
+                  <img src="img/prestamo.png">
                   <div class="menu-text">
                       <div class="menu-left">
                           <h4>Prestamos</h4>
