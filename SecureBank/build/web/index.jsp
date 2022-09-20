@@ -37,7 +37,6 @@
                     <input type="submit" name="accion" value="Ingresar" class="btn-login" >
                     </form>
                 </div>
-                </form>
             </div>
         </div>
     </body>
