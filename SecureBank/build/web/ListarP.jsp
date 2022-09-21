@@ -4,6 +4,7 @@
     Author     : enner
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -61,7 +62,7 @@
 
         <div class="container">
             <h1 class="text-center"><b>|---- Lista de Prestamos Realizados ----|</b></h1>
-            <a class="btn btn-warning" href="Controlador?accion=agregar">Realizar un Prestamo</a>
+            <a class="btn btn-warning" href="Controlador?menu=Principal">Regresar</a>
             <table class="table table-bordered bg-success" border="2">
                 <thead>
                     <tr>
@@ -73,7 +74,14 @@
                     </tr>
                 </thead>
                 <tbody>
+                <c:forEach var="prestamo" items="${prestamos}">
                     <tr>
+                        <td>${prestamo.getIdPrestamo()}</td>
+                        <td>${prestamo.getIdCliente()}</td>
+                        <td>${prestamo.getPlazoMeses()}</td>
+                        <td>${prestamo.getMontoPrestamo()}</td>
+                        <td>${prestamo.getFechaPrestamo()}</td>
+                    </c:forEach>
                     </tr>
                 </tbody>
             </table>

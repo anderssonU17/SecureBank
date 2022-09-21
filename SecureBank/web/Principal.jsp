@@ -132,32 +132,39 @@
                   <p>Realiza tus pagos a nuestros proveedores registrados.</p>
                 </div>
                 
-                  <div class="row">  
-                  <img src="img/prestamo.png">
+                  <div class="row">
+                    <a href="Controlador?menu=Prestamo">
+                  <img src="img/prestamop.png">
                   <div class="menu-text">
                       <div class="menu-left">
                           <h4>Prestamos</h4>
                        </div>
+                    </a>
                     </div>
                   <p>Pide un prestamo y escoge tu plazo para pagarlo.</p>
+
                 </div>
                 
-                              <div class="row">  
+                   <div class="row">  
+                       <a href="Controlador?menu=ListarPrestamo&accion=Listar">
                   <img src="img/pagosH.png">
                   <div class="menu-text">
                       <div class="menu-left">
                           <h4>Pagos Realizados</h4>
                        </div>
                     </div>
+                  </a>
                   <p>Revisa tus pagos realizados en nuestro banco.</p>
                 </div>
                 
-                              <div class="row">  
+                <a href="Controlador?menu=Opciones">
+                  <div class="row">  
                   <img src="img/proveedor.png">
                   <div class="menu-text">
-                      <div class="menu-left">
-                          <h4>Proveedores</h4>
+                   <div class="menu-left">
+                       <h4>Proveedores</h4>
                        </div>
+                      </a>
                     </div>
                   <p>Encuentra a tus proveedores para realizar tus pagos.</p>
                 </div>

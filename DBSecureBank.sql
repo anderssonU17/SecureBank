@@ -133,18 +133,18 @@ Create table Prestamo(
     idCliente int not null, 
     plazoMeses varchar(50) not null,
     montoPrestamo int not null,
-    fechaPrestamo date not null,
+    fechaPrestamo varchar(100) not null,
     primary key PK_idPrestamo (idPrestamo), 
     constraint FK_Prestamo_Cliente foreign key(idCliente)
     references Cliente(idCliente)
 );
 
 insert into Prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-values (100, '6 meses', 1000, now()); 
+values (100, '6 meses', 1000, '2022-12-20'); 
 insert into Prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-values(101, '2 meses', 2500, now());
+values(101, '2 meses', 2500, '2022-10-12');
 insert into Prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-values(102, '12 meses', 5000, now());
+values(102, '12 meses', 5000, '2022-12-10');
 
 select * from Prestamo; 
 -- -------------------------------------------------------------------------------------------------------------------------------

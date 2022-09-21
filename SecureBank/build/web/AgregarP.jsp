@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Agregar Prestamo</title>
+        <title>Hacer Prestamo</title>
         <link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
         
         
@@ -62,13 +62,12 @@
     <body>
         
         
-        <form class="form" action="Controlador">
+        <form class="form" action="Controlador?menu=AgregarPrestamo" method="POST">
             <h2 class="text-center">Agregar Préstamo</h2>
-            <p type="Préstamo:"><input type="int" placeholder="Escribe el id..." name="idPrestamo"></input></p>
-            <p type="Id del cliente:"><input type="int" name="idCliente" placeholder="Escribe tu id..."></input></p>
-            <p type="Plazo a Meses:"><input type="text" name="txtPlazoMeses" placeholder="Escribe el plazo..."></input></p>
-            <p type="Monto del préstamo:"><input type="int" name="montoPrestamo" placeholder="Escribe el número..."></input></p>
-            <p type="Fecha del préstamo:"><input type="date" name="fechaPrestamo"></input></p>
+            <p>Id Cliente:<input type="text" name="txtIdCliente" placeholder="Escribe tu id..."></input></p>
+            <p>Plazo a meses:<input type="text" name="txtPlazoMeses" placeholder="Escribe el plazo..."></input></p>
+            <p>Monto Prestamo:<input type="text" name="txtMontoPrestamo" placeholder="Escribe el número..."></input></p>
+            <p>Fecha:<input type="text" name="txtFechaPrestamo"></input></p>
             <input type="submit" name="accion" value="Agregar" class="btn btn-warning">
         <div>
             <span class="fa fa-envelope-o"></span> SecureBank@company.com
