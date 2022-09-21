@@ -51,11 +51,11 @@ Create table Usuario(
 );
 
 insert into Usuario(idUsuario, nombreUsuario, idCliente, contraseña, correo, fechaCreacion)
-	values (900, 'esalazar-2021585', 100, '@Ess585', 'esalazar-2021585@kinal.edu.gt', '2021-05-15');
+	values (900, 'esalazar', 100, '@Ess585', 'esalazar-2021585@kinal.edu.gt', '2021-05-15');
 insert into Usuario(idUsuario, nombreUsuario, idCliente, contraseña, correo, fechaCreacion)
-	values (901, 'aurrea-2019284', 101, 'AuRrea_284', 'aurrea-2019284@kinal.edu.gt', '2019-01-14');
+	values (901, 'aurrea', 101, '123', 'aurrea-2019284@kinal.edu.gt', '2019-01-14');
 insert into Usuario(idUsuario, nombreUsuario, idCliente, contraseña, correo, fechaCreacion)
-	values (902, 'egomez-2021400', 102, '3GomeZ.400', 'egomez-2021400@kinal.edu.gt', '2021-8-11');
+	values (902, 'abalcarcel', 102, '3GomeZ.400', 'egomez-2021400@kinal.edu.gt', '2021-8-11');
 
 select * from Usuario;
 
@@ -175,7 +175,7 @@ Create table PagoServicio(
     nitProveedor varchar (15) not null, -- FORANEA
     Monto varchar (45) not null, 
     idMoneda int not null, -- FORANEA
-    fechaYHora datetime not null,
+    fechaYHora date not null,
     primary key PK_identificadorPago(identificadorPago),
     constraint FK_PagoServicio_Cliente foreign key (idCliente)
 		references Cliente (idCliente),
@@ -186,11 +186,11 @@ Create table PagoServicio(
 );
 
 insert into PagoServicio(identificadorPago, idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (1100, 100, '458795', 25000, 500, '2020-05-04 - 15:47:12');
+	values (1100, 100, '458795', 25000, 500, now());
 insert into PagoServicio(identificadorPago, idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (1101, 101, '4564562', 150000, 501, '2021-11-03 - 09:21:05');
+	values (1101, 101, '4564562', 150000, 501, now());
 insert into PagoServicio(identificadorPago, idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (1102, 102, '45822', 15000, 502, '2022-07-30 - 08:38:52');
+	values (1102, 102, '45822', 15000, 502, now());
     
 select * from PagoServicio;
 

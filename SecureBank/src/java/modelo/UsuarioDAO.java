@@ -26,7 +26,7 @@ public class UsuarioDAO {
             rs = ps.executeQuery();
             while(rs.next()){
                 usuario.setIdUsuario(rs.getInt("idUsuario"));
-                usuario.setUsuario(rs.getString("usuario"));
+                usuario.setUsuario(rs.getString("idusuario"));
                 usuario.setContraseña(rs.getString("contraseña"));
             }
         
