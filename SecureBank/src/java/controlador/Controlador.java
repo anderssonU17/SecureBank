@@ -63,6 +63,7 @@ public class Controlador extends HttpServlet {
                         prestamo.setMontoPrestamo(MontoP);
                         prestamo.setFechaPrestamo(FechaP);
                         prestamoDAO.agregar(prestamo);
+                        request.getRequestDispatcher("Principal.jsp").forward(request, response);
                     break;
             }
         }else if(menu.equals("Opciones")){

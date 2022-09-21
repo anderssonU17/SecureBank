@@ -69,6 +69,8 @@
             <p>Monto Prestamo:<input type="text" name="txtMontoPrestamo" placeholder="Escribe el número..."></input></p>
             <p>Fecha:<input type="text" name="txtFechaPrestamo"></input></p>
             <input type="submit" name="accion" value="Agregar" class="btn btn-warning">
+            <br><br>
+            <a type="submit" href="Controlador?menu=Principal" class="btn btn-danger">Regresar</a>
         <div>
             <span class="fa fa-envelope-o"></span> SecureBank@company.com
         </div>
