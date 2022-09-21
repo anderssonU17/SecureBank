@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-         <link rel="stylesheet" href="css/estiloOp.css">
+         <link rel="stylesheet" href="css/EstiloOp.css">
         <title>SecureBank</title>
     </head>
 

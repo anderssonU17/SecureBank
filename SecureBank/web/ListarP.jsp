@@ -73,18 +73,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                <c:forEach>
-                    
-                </c:forEach>
                     <tr>
-                        <td><%= pres.getIdPrestamo()%></td>
-                        <td><%= pres.getIdCliente()%></td>
-                        <td><%= pres.getPlazoMeses()%></td>
-                        <td><%></td>
-                        <td><></td>
-
                     </tr>
-                    <%}%>
                 </tbody>
             </table>
         </div>      
