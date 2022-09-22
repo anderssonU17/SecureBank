@@ -19,8 +19,8 @@ import modelo.UsuarioDAO;
  * @author USER
  */
 public class Validar extends HttpServlet { 
-    UsuarioDAO usuarioDAO = new  UsuarioDAO();
-    Usuario usuario = new Usuario();
+    
+    
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -51,24 +51,7 @@ public class Validar extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String accion = request.getParameter("accion");
-        if(accion.equalsIgnoreCase("Ingresar")){
-        
-            String user = request.getParameter("txtUser");
-            String pass = request.getParameter("txtPass");
-            usuario = usuarioDAO.validar(user, pass);
-            if(usuario.getUsuario() != null){
-                request.setAttribute("usuario", usuario);
-                request.getRequestDispatcher("Controlador?menu=Cliente");
-            }else{
-                request.getRequestDispatcher("index.jsp").forward(request, response);
-            }
-        }else{
-            request.getRequestDispatcher("index.jsp").forward(request, response);
-        }
-
-
-
+        processRequest(request, response);
     }
 
     /**
