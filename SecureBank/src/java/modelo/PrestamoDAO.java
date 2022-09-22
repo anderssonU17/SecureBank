@@ -27,11 +27,11 @@ public class PrestamoDAO{
             rs = ps.executeQuery();
             while(rs.next()){
                 Prestamo pres = new Prestamo();
-                pres.setIdPrestamo(rs.getInt("idPrestamo"));
-                pres.setIdCliente(rs.getInt("idCliente"));
+                pres.setIdPrestamo(rs.getString("idPrestamo"));
+                pres.setIdCliente(rs.getString("idCliente"));
                 pres.setPlazoMeses(rs.getString("plazoMeses"));
-                pres.setMontoPrestamo(rs.getInt("montoPrestamo"));
-                pres.setFechaPrestamo(rs.getDate("fechaPrestamo"));
+                pres.setMontoPrestamo(rs.getString("montoPrestamo"));
+                pres.setFechaPrestamo(rs.getString("fechaPrestamo"));
                 listaPrestamo.add(pres);   
             }
         }catch(Exception e){
@@ -42,16 +42,16 @@ public class PrestamoDAO{
     }
 
 
-    public int Agregar(Prestamo pres) {
+    public int agregar(Prestamo pres) {
         //insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo);
-        String sql = "Insert into prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo) values(?,?,?,?,?)";
+        String sql = "Insert into prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo) values(?,?,?,?)";
         try{
             con = cn.Conexion();
             ps = con.prepareStatement(sql);
-            ps.setInt(1, pres.getIdCliente());
+            ps.setString(1, pres.getIdCliente());
             ps.setString(2, pres.getPlazoMeses());
-            ps.setDouble(3, pres.getMontoPrestamo());
-            ps.setDate(4, pres.getFechaPrestamo());
+            ps.setString(3, pres.getMontoPrestamo());
+            ps.setString(4, pres.getFechaPrestamo());
             ps.executeUpdate();
         }catch(Exception e){
             e.printStackTrace();

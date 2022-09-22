@@ -43,7 +43,7 @@
             <div>
                 <div class="text-center">
                     <h1 class="text center"> ¿Desea realizar un préstamo?</h1><br>
-                    <a class="btn btn-warning" href="Controlador?accion=listar">Listar Préstamo</a>
+                    <a class="btn btn-warning" href="Controlador?menu=AgregarPrestamo">Realizar Prestamo</a>
                 </div>
             </div>
         </div>

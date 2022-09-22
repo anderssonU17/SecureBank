@@ -4,16 +4,16 @@ package modelo;
 import java.sql.Date;
 
 public class Prestamo {
-   private int idPrestamo;
-   private int idCliente;
+   private String idPrestamo;
+   private String idCliente;
    private String plazoMeses;
-   private int montoPrestamo;
-   private Date fechaPrestamo;
+   private String montoPrestamo;
+   private String fechaPrestamo;
 
     public Prestamo() {
     }
 
-    public Prestamo(int idPrestamo, int idCliente, String plazoMeses, int montoPrestamo, Date fechaPrestamo) {
+    public Prestamo(String idPrestamo, String idCliente, String plazoMeses, String montoPrestamo, String fechaPrestamo) {
         this.idPrestamo = idPrestamo;
         this.idCliente = idCliente;
         this.plazoMeses = plazoMeses;
@@ -21,19 +21,19 @@ public class Prestamo {
         this.fechaPrestamo = fechaPrestamo;
     }
 
-    public int getIdPrestamo() {
+    public String getIdPrestamo() {
         return idPrestamo;
     }
 
-    public void setIdPrestamo(int idPrestamo) {
+    public void setIdPrestamo(String idPrestamo) {
         this.idPrestamo = idPrestamo;
     }
 
-    public int getIdCliente() {
+    public String getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(int idCliente) {
+    public void setIdCliente(String idCliente) {
         this.idCliente = idCliente;
     }
 
@@ -45,20 +45,20 @@ public class Prestamo {
         this.plazoMeses = plazoMeses;
     }
 
-    public int getMontoPrestamo() {
+    public String getMontoPrestamo() {
         return montoPrestamo;
     }
 
-    public void setMontoPrestamo(int montoPrestamo) {
+    public void setMontoPrestamo(String montoPrestamo) {
         this.montoPrestamo = montoPrestamo;
     }
 
-    public Date getFechaPrestamo() {
+    public String getFechaPrestamo() {
         return fechaPrestamo;
     }
 
-    public void setFechaPrestamo(Date fechaPrestamo) {
+    public void setFechaPrestamo(String fechaPrestamo) {
         this.fechaPrestamo = fechaPrestamo;
     }
-   
+
 }

@@ -238,18 +238,18 @@ body {
         
         <div class="perfil-usuario-body">
             <div class="perfil-usuario-bio">
-                <h3 class="titulo">${nombreUsuario.getNombreUsuario()}</h3>
+                <h3 class="titulo">Andersson Urrea</h3>
             </div>
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-signs"></i> DPI: </li>
-                    <li><i class="icono fas fa-phone-alt"></i> Telefono: </li>
-                    <li><i class="icono fas fa-building"></i> Direccion: </li>
+                    <li><i class="icono fas fa-map-signs"></i> DPI: 123 </li>
+                    <li><i class="icono fas fa-phone-alt"></i> Telefono: 41249463</li>
+                    <li><i class="icono fas fa-building"></i> Direccion: Nuevo Mexico</li>
                 </ul>
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-marker-alt"></i> Sexo: </li>
-                    <li><i class="icono fas fa-calendar-alt"></i> Nacionalidad: </li>
-                    <li><i class="icono fas fa-user-check"></i> Saldo: </li>
+                    <li><i class="icono fas fa-map-marker-alt"></i> Sexo: Masculino</li>
+                    <li><i class="icono fas fa-calendar-alt"></i> Nacionalidad: México</li>
+                    <li><i class="icono fas fa-user-check"></i> Saldo: 8000</li>
                 </ul>
             </div>
         </div>
