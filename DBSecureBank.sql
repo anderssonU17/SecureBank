@@ -176,7 +176,7 @@ Create table PagoServicio(
     nitProveedor varchar (15) not null, -- FORANEA
     Monto varchar (45) not null, 
     idMoneda int not null, -- FORANEA
-    fechaYHora date not null,
+    fecha varchar(15) not null,
     primary key PK_identificadorPago(identificadorPago),
     constraint FK_PagoServicio_Cliente foreign key (idCliente)
 		references Cliente (idCliente),
@@ -186,12 +186,12 @@ Create table PagoServicio(
 		references Moneda (idMoneda)
 );
 
-insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (100, '458795', 25000, 500, now());
-insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (101, '4564562', 150000, 501, now());
-insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (102, '45822', 15000, 502, now());
+insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fecha)
+	values (100, '458795', 25000, 500, '2022-09-21');
+insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fecha)
+	values (101, '4564562', 150000, 501, '2022-09-21');
+insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fecha)
+	values (102, '45822', 15000, 502, '2022-09-21');
     
 select * from PagoServicio;
 
