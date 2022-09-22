@@ -58,6 +58,7 @@ insert into Usuario(idUsuario, nombreUsuario, idCliente, contraseña, correo, fe
 	values (902, 'abalcarcel', 102, '3GomeZ.400', 'egomez-2021400@kinal.edu.gt', '2021-8-11');
 
 select * from Usuario;
+select * from Usuario where nombreUsuario = 'aurrea' and contraseña = 123; 
 
 -- -------------------------------------------------------------------------------------------------------------------------------
 -- ------------------------------------------------------- TABLA MONEDA --------------------------------------------------------
@@ -128,22 +129,22 @@ select * from Cuenta;
 
 
 Create table Prestamo(
-	idPrestamo int not null, 
+	idPrestamo int not null auto_increment, 
     idCliente int not null, 
     plazoMeses varchar(50) not null,
     montoPrestamo int not null,
-    fechaPrestamo date not null,
+    fechaPrestamo varchar(100) not null,
     primary key PK_idPrestamo (idPrestamo), 
     constraint FK_Prestamo_Cliente foreign key(idCliente)
     references Cliente(idCliente)
 );
 
-insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-values (456481, 100, '6 meses', 1000, now()); 
-insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-values(46548, 101, '2 meses', 2500, now());
-insert into Prestamo(idPrestamo, idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
-values(465811, 102, '12 meses', 5000, now());
+insert into Prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
+values (100, '6 meses', 1000, '2022-12-20'); 
+insert into Prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
+values(101, '2 meses', 2500, '2022-10-12');
+insert into Prestamo(idCliente, plazoMeses, montoPrestamo, fechaPrestamo)
+values(102, '12 meses', 5000, '2022-12-10');
 
 select * from Prestamo; 
 -- -------------------------------------------------------------------------------------------------------------------------------
@@ -170,12 +171,12 @@ select * from Proveedor;
 -- --------------------------------------------------------------------------------------------------------------------------------
         
 Create table PagoServicio(
-	identificadorPago int not null,
+	identificadorPago int not null auto_increment,
     idCliente int not null, -- FORANEA
     nitProveedor varchar (15) not null, -- FORANEA
     Monto varchar (45) not null, 
     idMoneda int not null, -- FORANEA
-    fechaYHora date not null,
+    fecha varchar(15) not null,
     primary key PK_identificadorPago(identificadorPago),
     constraint FK_PagoServicio_Cliente foreign key (idCliente)
 		references Cliente (idCliente),
@@ -185,12 +186,12 @@ Create table PagoServicio(
 		references Moneda (idMoneda)
 );
 
-insert into PagoServicio(identificadorPago, idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (1100, 100, '458795', 25000, 500, now());
-insert into PagoServicio(identificadorPago, idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (1101, 101, '4564562', 150000, 501, now());
-insert into PagoServicio(identificadorPago, idCliente, nitProveedor, Monto, idMoneda, fechaYHora)
-	values (1102, 102, '45822', 15000, 502, now());
+insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fecha)
+	values (100, '458795', 25000, 500, '2022-09-21');
+insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fecha)
+	values (101, '4564562', 150000, 501, '2022-09-21');
+insert into PagoServicio(idCliente, nitProveedor, Monto, idMoneda, fecha)
+	values (102, '45822', 15000, 502, '2022-09-21');
     
 select * from PagoServicio;
 
