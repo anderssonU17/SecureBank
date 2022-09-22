@@ -14,8 +14,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import modelo.Cliente;
 import modelo.ClienteDAO;
-import modelo.Prestamo;
-import modelo.PrestamoDAO;
 import modelo.Usuario;
 import modelo.UsuarioDAO;
 
@@ -26,8 +24,6 @@ import modelo.UsuarioDAO;
 public class Controlador extends HttpServlet {
     Cliente cliente = new Cliente(); 
     ClienteDAO clienteDAO = new ClienteDAO(); 
-    Prestamo prestamo = new Prestamo(); 
-    PrestamoDAO prestamoDAO = new PrestamoDAO();
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -40,34 +36,6 @@ public class Controlador extends HttpServlet {
            
         }else if (menu.equals("Cliente")){
             request.getRequestDispatcher("Cliente.jsp").forward(request, response);
-        }else if (menu.equals("Prestamo")){
-            request.getRequestDispatcher("Prestamo.jsp").forward(request, response);
-        }else if(menu.equals("ListarPrestamo")){
-                switch(accion){
-                    case "Listar":
-                        List listaPrestamo = prestamoDAO.listar();
-                        request.setAttribute("prestamos", listaPrestamo);
-                        break;
-                }
-            request.getRequestDispatcher("ListarP.jsp").forward(request, response);
-        }else if(menu.equals("AgregarPrestamo")){
-            request.getRequestDispatcher("AgregarP.jsp").forward(request, response);
-            switch(accion){
-                case "Agregar":
-                        String idCliente = request.getParameter("txtIdCliente");
-                        String PlazoM = request.getParameter("txtPlazoMeses");
-                        String MontoP = request.getParameter("txtMontoPrestamo");
-                        String FechaP = request.getParameter("txtFechaPrestamo");
-                        prestamo.setIdCliente(idCliente);
-                        prestamo.setPlazoMeses(PlazoM);
-                        prestamo.setMontoPrestamo(MontoP);
-                        prestamo.setFechaPrestamo(FechaP);
-                        prestamoDAO.agregar(prestamo);
-                        request.getRequestDispatcher("Principal.jsp").forward(request, response);
-                    break;
-            }
-        }else if(menu.equals("Opciones")){
-            request.getRequestDispatcher("Opciones.jsp").forward(request, response);
         }
            
     }

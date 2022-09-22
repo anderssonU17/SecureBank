@@ -1,18 +1,19 @@
+
 package modelo;
 
 import java.sql.Date;
 
 public class Prestamo {
    private int idPrestamo;
-   private String idCliente;
+   private int idCliente;
    private String plazoMeses;
-   private String montoPrestamo;
-   private String fechaPrestamo;
+   private int montoPrestamo;
+   private Date fechaPrestamo;
 
     public Prestamo() {
     }
 
-    public Prestamo(int idPrestamo, String idCliente, String plazoMeses, String montoPrestamo, String fechaPrestamo) {
+    public Prestamo(int idPrestamo, int idCliente, String plazoMeses, int montoPrestamo, Date fechaPrestamo) {
         this.idPrestamo = idPrestamo;
         this.idCliente = idCliente;
         this.plazoMeses = plazoMeses;
@@ -28,11 +29,11 @@ public class Prestamo {
         this.idPrestamo = idPrestamo;
     }
 
-    public String getIdCliente() {
+    public int getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(String idCliente) {
+    public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
     }
 
@@ -44,21 +45,20 @@ public class Prestamo {
         this.plazoMeses = plazoMeses;
     }
 
-    public String getMontoPrestamo() {
+    public int getMontoPrestamo() {
         return montoPrestamo;
     }
 
-    public void setMontoPrestamo(String montoPrestamo) {
+    public void setMontoPrestamo(int montoPrestamo) {
         this.montoPrestamo = montoPrestamo;
     }
 
-    public String getFechaPrestamo() {
+    public Date getFechaPrestamo() {
         return fechaPrestamo;
     }
 
-    public void setFechaPrestamo(String fechaPrestamo) {
+    public void setFechaPrestamo(Date fechaPrestamo) {
         this.fechaPrestamo = fechaPrestamo;
     }
-
    
 }
